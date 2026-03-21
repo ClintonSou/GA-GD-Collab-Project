@@ -1,0 +1,74 @@
+{
+    "name": "playerControl",
+    "maps": [
+        {
+            "name": "inGameControl",
+            "id": "a7b7fb76-47fa-4561-a2a5-f1023351948c",
+            "actions": [
+                {
+                    "name": "stickMovement",
+                    "type": "Value",
+                    "id": "b6ed247e-cb2d-4b0a-b20f-648dec7d3af2",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "leftDpad",
+                    "type": "Button",
+                    "id": "2df57987-bbeb-4c7d-b68f-8de290d2f1a6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "rightDpad",
+                    "type": "Button",
+                    "id": "42ffc799-1dd3-471e-aee4-ac3499736eaa",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "52f35105-fe8a-4b38-8880-6bc13b9d7f89",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "stickMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a910b062-850b-4e8c-be65-447b90c5880b",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "leftDpad",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f8941ab5-414c-4b75-a326-8b90fbab4181",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "rightDpad",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
