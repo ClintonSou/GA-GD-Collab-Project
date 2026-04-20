@@ -1768,10 +1768,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2293113816664531186, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
-      propertyPath: airSpeed
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2293113816664531186, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: jumpHeight
       value: 5
       objectReference: {fileID: 0}
@@ -1838,10 +1834,6 @@ PrefabInstance:
     - target: {fileID: 5605493686429836765, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: m_Name
       value: player (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7753331403843633742, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11976,7 +11968,7 @@ GameObject:
   - component: {fileID: 1496706862}
   - component: {fileID: 1496706863}
   m_Layer: 0
-  m_Name: ziplineWall
+  m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

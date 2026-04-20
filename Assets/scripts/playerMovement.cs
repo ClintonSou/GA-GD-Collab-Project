@@ -8,16 +8,13 @@ public class playerMovement : MonoBehaviour
     public float speed;
     private Rigidbody2D body;
     public bool grounded;
-    public bool wallable;
+    public bool walled;
     public float jumpHeight;
-
-    public string wall_RelaPos;
 
     PlayerControl control;
 
 
     Vector2 controlMoveValue;
-    Vector2 aimHeadValue;
 
     private void Awake()
     {
@@ -25,45 +22,49 @@ public class playerMovement : MonoBehaviour
 
         control.inGameControl.stickMovement.performed += ctx => controlMoveValue = ctx.ReadValue<Vector2>();
         control.inGameControl.stickMovement.started += ctx => controlMoveValue = ctx.ReadValue<Vector2>();
-        control.inGameControl.stickMovement.canceled += ctx => controlMoveValue = ctx.ReadValue<Vector2>();
+        control.inGameControl.stickMovement.canceled += ctx => controlMoveValue = Vector2.zero;
 
-        control.inGameControl.aimHead.performed += ctx => aimHeadValue = ctx.ReadValue<Vector2>();
-        control.inGameControl.aimHead.started += ctx => aimHeadValue = ctx.ReadValue<Vector2>();
-        control.inGameControl.aimHead.canceled += ctx => aimHeadValue = ctx.ReadValue<Vector2>();
-
-        control.inGameControl.TriggerHeadThrow.performed += ctx => headThrow();
-
-        control.inGameControl.TriggerRebuild.performed += ctx => headThrow();
-
-        control.inGameControl.jumpcling.performed += ctx => southButtonPerformed();
     }
+
+
 
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        control.inGameControl.Enable();
-    }
-
-    void southButtonPerformed()
-    {
-        if (grounded == true  && wallable == false)
-        {
-            jump();
-        }
-        else if (wallable == true)
-        {
-            Debug.Log("clingToWall");
-        }
     }
     private void jump()
     {
         body.velocity = new Vector2(body.velocity.x, jumpHeight);
+        grounded = false;
     }
 
-    private void headThrow()
+
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        Debug.Log("headthrow");
+        if (collision.gameObject.tag == "Ground")
+        {
+            grounded = true;
+        }
+
+        if (collision.gameObject.tag == "Wall")
+        {
+            walled = true;
+        }
+
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            grounded = false;
+        }
+
+        if (collision.gameObject.tag == "Wall")
+        {
+            walled = false;
+        }
     }
 
     private void move()
@@ -72,12 +73,11 @@ public class playerMovement : MonoBehaviour
         {
             body.velocity = new Vector2(controlMoveValue.x * speed, body.velocity.y);
         }
-
+   
     }
 
     void Update()
     {
         move();
-        Debug.Log(controlMoveValue);
     }
 }

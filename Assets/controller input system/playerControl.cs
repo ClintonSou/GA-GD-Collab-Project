@@ -37,36 +37,18 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""TriggerHeadThrow"",
+                    ""name"": ""leftDpad"",
                     ""type"": ""Button"",
-                    ""id"": ""9450f86f-f5ec-4d4a-88c7-47e4ec359ab1"",
+                    ""id"": ""2df57987-bbeb-4c7d-b68f-8de290d2f1a6"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""TriggerRebuild"",
+                    ""name"": ""rightDpad"",
                     ""type"": ""Button"",
-                    ""id"": ""8cd5291b-35ae-4834-86b6-bc794d3eec4e"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""aimHead"",
-                    ""type"": ""Value"",
-                    ""id"": ""8c7c536a-5e77-4e9b-905a-5f61adc3f8d4"",
-                    ""expectedControlType"": ""Stick"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""jump/cling"",
-                    ""type"": ""Button"",
-                    ""id"": ""89fea38b-2b29-4e62-8049-d0765679796d"",
+                    ""id"": ""42ffc799-1dd3-471e-aee4-ac3499736eaa"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -87,45 +69,23 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""4be54c7f-d7e5-4572-9089-24d485889161"",
-                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""id"": ""a910b062-850b-4e8c-be65-447b90c5880b"",
+                    ""path"": ""<Gamepad>/dpad/left"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""TriggerHeadThrow"",
+                    ""action"": ""leftDpad"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""31c617f8-9e9d-46fc-9991-54b9cadd73cb"",
-                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""id"": ""f8941ab5-414c-4b75-a326-8b90fbab4181"",
+                    ""path"": ""<Gamepad>/dpad/right"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""TriggerRebuild"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""46ee7940-39aa-46cd-b314-7d0491bf0231"",
-                    ""path"": ""<Gamepad>/rightStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""aimHead"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""da2fb662-db55-4706-b5fa-8b31ed3902e4"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""jump/cling"",
+                    ""action"": ""rightDpad"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -137,10 +97,8 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
         // inGameControl
         m_inGameControl = asset.FindActionMap("inGameControl", throwIfNotFound: true);
         m_inGameControl_stickMovement = m_inGameControl.FindAction("stickMovement", throwIfNotFound: true);
-        m_inGameControl_TriggerHeadThrow = m_inGameControl.FindAction("TriggerHeadThrow", throwIfNotFound: true);
-        m_inGameControl_TriggerRebuild = m_inGameControl.FindAction("TriggerRebuild", throwIfNotFound: true);
-        m_inGameControl_aimHead = m_inGameControl.FindAction("aimHead", throwIfNotFound: true);
-        m_inGameControl_jumpcling = m_inGameControl.FindAction("jump/cling", throwIfNotFound: true);
+        m_inGameControl_leftDpad = m_inGameControl.FindAction("leftDpad", throwIfNotFound: true);
+        m_inGameControl_rightDpad = m_inGameControl.FindAction("rightDpad", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -203,19 +161,15 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_inGameControl;
     private List<IInGameControlActions> m_InGameControlActionsCallbackInterfaces = new List<IInGameControlActions>();
     private readonly InputAction m_inGameControl_stickMovement;
-    private readonly InputAction m_inGameControl_TriggerHeadThrow;
-    private readonly InputAction m_inGameControl_TriggerRebuild;
-    private readonly InputAction m_inGameControl_aimHead;
-    private readonly InputAction m_inGameControl_jumpcling;
+    private readonly InputAction m_inGameControl_leftDpad;
+    private readonly InputAction m_inGameControl_rightDpad;
     public struct InGameControlActions
     {
         private @PlayerControl m_Wrapper;
         public InGameControlActions(@PlayerControl wrapper) { m_Wrapper = wrapper; }
         public InputAction @stickMovement => m_Wrapper.m_inGameControl_stickMovement;
-        public InputAction @TriggerHeadThrow => m_Wrapper.m_inGameControl_TriggerHeadThrow;
-        public InputAction @TriggerRebuild => m_Wrapper.m_inGameControl_TriggerRebuild;
-        public InputAction @aimHead => m_Wrapper.m_inGameControl_aimHead;
-        public InputAction @jumpcling => m_Wrapper.m_inGameControl_jumpcling;
+        public InputAction @leftDpad => m_Wrapper.m_inGameControl_leftDpad;
+        public InputAction @rightDpad => m_Wrapper.m_inGameControl_rightDpad;
         public InputActionMap Get() { return m_Wrapper.m_inGameControl; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -228,18 +182,12 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
             @stickMovement.started += instance.OnStickMovement;
             @stickMovement.performed += instance.OnStickMovement;
             @stickMovement.canceled += instance.OnStickMovement;
-            @TriggerHeadThrow.started += instance.OnTriggerHeadThrow;
-            @TriggerHeadThrow.performed += instance.OnTriggerHeadThrow;
-            @TriggerHeadThrow.canceled += instance.OnTriggerHeadThrow;
-            @TriggerRebuild.started += instance.OnTriggerRebuild;
-            @TriggerRebuild.performed += instance.OnTriggerRebuild;
-            @TriggerRebuild.canceled += instance.OnTriggerRebuild;
-            @aimHead.started += instance.OnAimHead;
-            @aimHead.performed += instance.OnAimHead;
-            @aimHead.canceled += instance.OnAimHead;
-            @jumpcling.started += instance.OnJumpcling;
-            @jumpcling.performed += instance.OnJumpcling;
-            @jumpcling.canceled += instance.OnJumpcling;
+            @leftDpad.started += instance.OnLeftDpad;
+            @leftDpad.performed += instance.OnLeftDpad;
+            @leftDpad.canceled += instance.OnLeftDpad;
+            @rightDpad.started += instance.OnRightDpad;
+            @rightDpad.performed += instance.OnRightDpad;
+            @rightDpad.canceled += instance.OnRightDpad;
         }
 
         private void UnregisterCallbacks(IInGameControlActions instance)
@@ -247,18 +195,12 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
             @stickMovement.started -= instance.OnStickMovement;
             @stickMovement.performed -= instance.OnStickMovement;
             @stickMovement.canceled -= instance.OnStickMovement;
-            @TriggerHeadThrow.started -= instance.OnTriggerHeadThrow;
-            @TriggerHeadThrow.performed -= instance.OnTriggerHeadThrow;
-            @TriggerHeadThrow.canceled -= instance.OnTriggerHeadThrow;
-            @TriggerRebuild.started -= instance.OnTriggerRebuild;
-            @TriggerRebuild.performed -= instance.OnTriggerRebuild;
-            @TriggerRebuild.canceled -= instance.OnTriggerRebuild;
-            @aimHead.started -= instance.OnAimHead;
-            @aimHead.performed -= instance.OnAimHead;
-            @aimHead.canceled -= instance.OnAimHead;
-            @jumpcling.started -= instance.OnJumpcling;
-            @jumpcling.performed -= instance.OnJumpcling;
-            @jumpcling.canceled -= instance.OnJumpcling;
+            @leftDpad.started -= instance.OnLeftDpad;
+            @leftDpad.performed -= instance.OnLeftDpad;
+            @leftDpad.canceled -= instance.OnLeftDpad;
+            @rightDpad.started -= instance.OnRightDpad;
+            @rightDpad.performed -= instance.OnRightDpad;
+            @rightDpad.canceled -= instance.OnRightDpad;
         }
 
         public void RemoveCallbacks(IInGameControlActions instance)
@@ -279,9 +221,7 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
     public interface IInGameControlActions
     {
         void OnStickMovement(InputAction.CallbackContext context);
-        void OnTriggerHeadThrow(InputAction.CallbackContext context);
-        void OnTriggerRebuild(InputAction.CallbackContext context);
-        void OnAimHead(InputAction.CallbackContext context);
-        void OnJumpcling(InputAction.CallbackContext context);
+        void OnLeftDpad(InputAction.CallbackContext context);
+        void OnRightDpad(InputAction.CallbackContext context);
     }
 }

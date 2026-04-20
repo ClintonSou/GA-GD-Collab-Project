@@ -15,36 +15,18 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "TriggerHeadThrow",
+                    "name": "leftDpad",
                     "type": "Button",
-                    "id": "9450f86f-f5ec-4d4a-88c7-47e4ec359ab1",
+                    "id": "2df57987-bbeb-4c7d-b68f-8de290d2f1a6",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "TriggerRebuild",
+                    "name": "rightDpad",
                     "type": "Button",
-                    "id": "8cd5291b-35ae-4834-86b6-bc794d3eec4e",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "aimHead",
-                    "type": "Value",
-                    "id": "8c7c536a-5e77-4e9b-905a-5f61adc3f8d4",
-                    "expectedControlType": "Stick",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "jump/cling",
-                    "type": "Button",
-                    "id": "89fea38b-2b29-4e62-8049-d0765679796d",
+                    "id": "42ffc799-1dd3-471e-aee4-ac3499736eaa",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -65,45 +47,23 @@
                 },
                 {
                     "name": "",
-                    "id": "4be54c7f-d7e5-4572-9089-24d485889161",
-                    "path": "<Gamepad>/rightTrigger",
+                    "id": "a910b062-850b-4e8c-be65-447b90c5880b",
+                    "path": "<Gamepad>/dpad/left",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "TriggerHeadThrow",
+                    "action": "leftDpad",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "31c617f8-9e9d-46fc-9991-54b9cadd73cb",
-                    "path": "<Gamepad>/rightShoulder",
+                    "id": "f8941ab5-414c-4b75-a326-8b90fbab4181",
+                    "path": "<Gamepad>/dpad/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "TriggerRebuild",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "46ee7940-39aa-46cd-b314-7d0491bf0231",
-                    "path": "<Gamepad>/rightStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "aimHead",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "da2fb662-db55-4706-b5fa-8b31ed3902e4",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "jump/cling",
+                    "action": "rightDpad",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
