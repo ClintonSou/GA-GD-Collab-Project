@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
@@ -12,17 +10,6 @@ public class playerMovement : MonoBehaviour
     public bool grounded;
     public bool wallable;
     public float jumpHeight;
-    Scene m_Scene;
-    string sceneName;
-    public float movementValuethingy;
-    public bool facingforward;
-
-    //head stuff
-    private Rigidbody2D headRB;
-    public GameObject head;
-    public float throwStrength;
-    public bool attached;
-    public GameObject refToPlayerBody;
 
     public string wall_RelaPos;
 
@@ -46,31 +33,21 @@ public class playerMovement : MonoBehaviour
 
         control.inGameControl.TriggerHeadThrow.performed += ctx => headThrow();
 
-        control.inGameControl.TriggerRebuild.performed += ctx => headRebuild();
+        control.inGameControl.TriggerRebuild.performed += ctx => headThrow();
 
         control.inGameControl.jumpcling.performed += ctx => southButtonPerformed();
-
-        control.inGameControl.resetScene.performed += ctx => resetScene();
-
-        control.inGameControl.loadScene1.performed += ctx => sceneLoad1();
-
-        control.inGameControl.loadScene2.performed += ctx => sceneLoad2();
-
-        control.inGameControl.loadScene3.performed += ctx => sceneLoad3();
     }
 
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        headRB = head.GetComponent<Rigidbody2D>();
         control.inGameControl.Enable();
-        attached = true;
     }
 
     void southButtonPerformed()
     {
-        if (grounded == true && wallable == false)
+        if (grounded == true  && wallable == false)
         {
             jump();
         }
@@ -79,25 +56,6 @@ public class playerMovement : MonoBehaviour
             Debug.Log("clingToWall");
         }
     }
-
-    private void resetScene()
-    {
-        this.transform.position = new Vector2(0, 0);
-        attached = true;
-    }
-    private void sceneLoad1()
-    {
-        SceneManager.LoadScene("scene_1");
-    }
-    private void sceneLoad2()
-    {
-        SceneManager.LoadScene("scene_2");
-    }
-    private void sceneLoad3()
-    {
-        SceneManager.LoadScene("scene_3");
-    }
-
     private void jump()
     {
         body.velocity = new Vector2(body.velocity.x, jumpHeight);
@@ -106,30 +64,6 @@ public class playerMovement : MonoBehaviour
     private void headThrow()
     {
         Debug.Log("headthrow");
-
-        if (attached == true)
-        {
-            attached = false;
-
-            if (facingforward == true)
-            {
-                headRB.AddForce(new Vector2(500, 50));
-            }
-            if (facingforward == false)
-            {
-                headRB.AddForce(-new Vector2(500, 50));
-            }
-        }
-    }
-
-    private void headRebuild()
-    {
-        if (attached == false)
-        {
-            attached = true;
-            head.transform.position = new Vector2(head.transform.position.x, head.transform.position.y + 1);
-            refToPlayerBody.transform.position = new Vector2(head.transform.position.x, head.transform.position.y - 1);
-        }
     }
 
     private void move()
@@ -138,17 +72,6 @@ public class playerMovement : MonoBehaviour
         {
             body.velocity = new Vector2(controlMoveValue.x * speed, body.velocity.y);
         }
-        // sydney code movement thing
-        if (movementValuethingy < 0)
-        {
-            //refToPlayerBody.transform.localScale = new Vector3(-1, 1, 1);
-            facingforward = false;
-        }
-        if (movementValuethingy > 0)
-        {
-            //refToPlayerBody.transform.localScale = new Vector3(1, 1, 1);
-            facingforward = true;
-        }
 
     }
 
@@ -156,29 +79,5 @@ public class playerMovement : MonoBehaviour
     {
         move();
         Debug.Log(controlMoveValue);
-
-        movementValuethingy = controlMoveValue.x;
-
-        //sydney code wallable movement
-        if (wallable == true && grounded == false)
-        {
-            body.velocity = new Vector2(controlMoveValue.x, controlMoveValue.y * speed);
-        }
-        //sydney code head stuff
-        if (attached == true)
-        {
-            head.transform.position = new Vector2(refToPlayerBody.transform.position.x, refToPlayerBody.transform.position.y + 1);
-
-            headRB.velocity = Vector3.zero;
-
-
-        }
-
-        if (attached == false)
-        {
-
-        }
-
-
     }
 }
