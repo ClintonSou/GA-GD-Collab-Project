@@ -71,6 +71,42 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""resetScene"",
+                    ""type"": ""Button"",
+                    ""id"": ""9cdfaba3-35ce-4d6e-9733-b88ae6c0d2c9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""loadScene1"",
+                    ""type"": ""Button"",
+                    ""id"": ""d7b8976d-2668-4892-b1aa-7af39ad02370"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""loadScene2"",
+                    ""type"": ""Button"",
+                    ""id"": ""5da82234-dc5b-499d-90ba-10666c92d84f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""loadScene3"",
+                    ""type"": ""Button"",
+                    ""id"": ""4ff80346-407f-45a3-bbe2-a57cad1da584"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -128,6 +164,50 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
                     ""action"": ""jump/cling"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4c86b214-044d-41c2-b4a6-66caf1cd931e"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""resetScene"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""56a7a011-e456-4b87-866d-01353313e823"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""loadScene1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1ede816a-b230-4345-b793-db91af4044de"",
+                    ""path"": ""<Gamepad>/dpad/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""loadScene2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""736617ae-72a5-452f-ac10-e4414787e489"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""loadScene3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -141,6 +221,10 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
         m_inGameControl_TriggerRebuild = m_inGameControl.FindAction("TriggerRebuild", throwIfNotFound: true);
         m_inGameControl_aimHead = m_inGameControl.FindAction("aimHead", throwIfNotFound: true);
         m_inGameControl_jumpcling = m_inGameControl.FindAction("jump/cling", throwIfNotFound: true);
+        m_inGameControl_resetScene = m_inGameControl.FindAction("resetScene", throwIfNotFound: true);
+        m_inGameControl_loadScene1 = m_inGameControl.FindAction("loadScene1", throwIfNotFound: true);
+        m_inGameControl_loadScene2 = m_inGameControl.FindAction("loadScene2", throwIfNotFound: true);
+        m_inGameControl_loadScene3 = m_inGameControl.FindAction("loadScene3", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -207,6 +291,10 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
     private readonly InputAction m_inGameControl_TriggerRebuild;
     private readonly InputAction m_inGameControl_aimHead;
     private readonly InputAction m_inGameControl_jumpcling;
+    private readonly InputAction m_inGameControl_resetScene;
+    private readonly InputAction m_inGameControl_loadScene1;
+    private readonly InputAction m_inGameControl_loadScene2;
+    private readonly InputAction m_inGameControl_loadScene3;
     public struct InGameControlActions
     {
         private @PlayerControl m_Wrapper;
@@ -216,6 +304,10 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
         public InputAction @TriggerRebuild => m_Wrapper.m_inGameControl_TriggerRebuild;
         public InputAction @aimHead => m_Wrapper.m_inGameControl_aimHead;
         public InputAction @jumpcling => m_Wrapper.m_inGameControl_jumpcling;
+        public InputAction @resetScene => m_Wrapper.m_inGameControl_resetScene;
+        public InputAction @loadScene1 => m_Wrapper.m_inGameControl_loadScene1;
+        public InputAction @loadScene2 => m_Wrapper.m_inGameControl_loadScene2;
+        public InputAction @loadScene3 => m_Wrapper.m_inGameControl_loadScene3;
         public InputActionMap Get() { return m_Wrapper.m_inGameControl; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -240,6 +332,18 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
             @jumpcling.started += instance.OnJumpcling;
             @jumpcling.performed += instance.OnJumpcling;
             @jumpcling.canceled += instance.OnJumpcling;
+            @resetScene.started += instance.OnResetScene;
+            @resetScene.performed += instance.OnResetScene;
+            @resetScene.canceled += instance.OnResetScene;
+            @loadScene1.started += instance.OnLoadScene1;
+            @loadScene1.performed += instance.OnLoadScene1;
+            @loadScene1.canceled += instance.OnLoadScene1;
+            @loadScene2.started += instance.OnLoadScene2;
+            @loadScene2.performed += instance.OnLoadScene2;
+            @loadScene2.canceled += instance.OnLoadScene2;
+            @loadScene3.started += instance.OnLoadScene3;
+            @loadScene3.performed += instance.OnLoadScene3;
+            @loadScene3.canceled += instance.OnLoadScene3;
         }
 
         private void UnregisterCallbacks(IInGameControlActions instance)
@@ -259,6 +363,18 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
             @jumpcling.started -= instance.OnJumpcling;
             @jumpcling.performed -= instance.OnJumpcling;
             @jumpcling.canceled -= instance.OnJumpcling;
+            @resetScene.started -= instance.OnResetScene;
+            @resetScene.performed -= instance.OnResetScene;
+            @resetScene.canceled -= instance.OnResetScene;
+            @loadScene1.started -= instance.OnLoadScene1;
+            @loadScene1.performed -= instance.OnLoadScene1;
+            @loadScene1.canceled -= instance.OnLoadScene1;
+            @loadScene2.started -= instance.OnLoadScene2;
+            @loadScene2.performed -= instance.OnLoadScene2;
+            @loadScene2.canceled -= instance.OnLoadScene2;
+            @loadScene3.started -= instance.OnLoadScene3;
+            @loadScene3.performed -= instance.OnLoadScene3;
+            @loadScene3.canceled -= instance.OnLoadScene3;
         }
 
         public void RemoveCallbacks(IInGameControlActions instance)
@@ -283,5 +399,9 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
         void OnTriggerRebuild(InputAction.CallbackContext context);
         void OnAimHead(InputAction.CallbackContext context);
         void OnJumpcling(InputAction.CallbackContext context);
+        void OnResetScene(InputAction.CallbackContext context);
+        void OnLoadScene1(InputAction.CallbackContext context);
+        void OnLoadScene2(InputAction.CallbackContext context);
+        void OnLoadScene3(InputAction.CallbackContext context);
     }
 }
