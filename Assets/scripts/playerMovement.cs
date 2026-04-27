@@ -10,22 +10,20 @@ public class playerMovement : MonoBehaviour
 
     public bool grounded;
     public bool wallable;
-    public bool isAimingHead;
     public bool isClimbing;
 
     public float jumpHeight;
     public float speed;
 
-
-    public string wall_RelaPos;
-
     PlayerControl control;
+    public GameObject head;
 
 
     Vector2 controlMoveValue;
     Vector2 aimHeadValue;
+    public Vector2 lastStableGround;
 
-    public enum PlayerStates {normal, aiming, climbing, aimClimbing}
+    public enum PlayerStates {normal, aiming, climbing, aimClimbing, headOut}
     public PlayerStates currentPlayerStateIs;
 
     private void Awake()
@@ -40,9 +38,13 @@ public class playerMovement : MonoBehaviour
         control.inGameControl.aimHead.started += ctx => aimHeadValue = ctx.ReadValue<Vector2>();
         control.inGameControl.aimHead.canceled += ctx => aimHeadValue = ctx.ReadValue<Vector2>();
 
-        control.inGameControl.TriggerHeadThrow.performed += ctx => headThrow(ctx);
-        control.inGameControl.TriggerHeadThrow.started += ctx => headThrow(ctx);
-        control.inGameControl.TriggerHeadThrow.canceled += ctx => headThrow(ctx);
+        control.inGameControl.TriggerHeadThrowAim.performed += ctx => headThrowAimTrigger(ctx);
+        control.inGameControl.TriggerHeadThrowAim.started += ctx => headThrowAimTrigger(ctx);
+        control.inGameControl.TriggerHeadThrowAim.canceled += ctx => headThrowAimTrigger(ctx);
+
+        control.inGameControl.TriggerHeadThrow.performed += ctx => headThrow();
+
+        control.inGameControl.TriggerRebuild.performed += ctx => rebuildBody();
 
         control.inGameControl.jumpcling.performed += ctx => southButtonPerformed();
     }
@@ -57,19 +59,23 @@ public class playerMovement : MonoBehaviour
 
     void southButtonPerformed()
     {
-        if (grounded == true  && wallable == false)
+        if (currentPlayerStateIs != PlayerStates.headOut)
         {
-            jump();
+            if (grounded == true && wallable == false)
+            {
+                jump();
+            }
+            else if (wallable == true && currentPlayerStateIs == PlayerStates.normal)
+            {
+                currentPlayerStateIs = PlayerStates.climbing;
+                isClimbing = true;
+            }
+            else if (currentPlayerStateIs == PlayerStates.climbing)
+            {
+                wallJump();
+            }
         }
-        else if (wallable == true && currentPlayerStateIs == PlayerStates.normal)
-        {
-            currentPlayerStateIs = PlayerStates.climbing;
-            isClimbing = true;
-        }
-        else if (currentPlayerStateIs == PlayerStates.climbing)
-        {
-            wallJump();
-        }
+
     }
     private void jump()
     {
@@ -81,34 +87,64 @@ public class playerMovement : MonoBehaviour
 
     }
 
-    private void headThrow(InputAction.CallbackContext ctx)
+    private void headThrowAimTrigger(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed)
+        if (currentPlayerStateIs != PlayerStates.headOut)
         {
-            isAimingHead = true;
-            if (isClimbing == false)
-            {
-                currentPlayerStateIs = PlayerStates.aiming;
 
-            }
-            else if (isClimbing == true)
-            {
-                currentPlayerStateIs = PlayerStates.aimClimbing;
-            }
+                if (ctx.performed || ctx.started)
+                {
+                    if (isClimbing == false)
+                    {
+                        currentPlayerStateIs = PlayerStates.aiming;
+
+                    }
+                    else if (isClimbing == true)
+                    {
+                        currentPlayerStateIs = PlayerStates.aimClimbing;
+                    }
+                }
+                else if (ctx.canceled)
+                {
+                    if (isClimbing == false && currentPlayerStateIs != PlayerStates.headOut)
+                    {
+                        currentPlayerStateIs = PlayerStates.normal;
+
+                    }
+                    else if (isClimbing == true && currentPlayerStateIs != PlayerStates.headOut)
+                    {
+                        currentPlayerStateIs = PlayerStates.climbing;
+                    }
+                }
+                        
         }
-        else if (ctx.canceled)
+        
+
+    }
+
+    private void headThrow()
+    {
+        if (currentPlayerStateIs == PlayerStates.aiming || currentPlayerStateIs == PlayerStates.aimClimbing)
         {
-            isAimingHead = false;
-
-            if (isClimbing == false)
+            if (grounded == true || isClimbing == true)
             {
-                currentPlayerStateIs = PlayerStates.normal;
+                isClimbing = false;
+                GameObject isHead = Instantiate(head, new Vector2(transform.position.x, transform.position.y + 1f), Quaternion.identity);
+                isHead.GetComponent<Rigidbody2D>().velocity = new Vector2(aimHeadValue.x * -1f * 10f, aimHeadValue.y * -1f * 10f);
+                currentPlayerStateIs = PlayerStates.headOut;
+            }
+            
+        }
+    }
 
-            }
-            else if (isClimbing == true)
-            {
-                currentPlayerStateIs = PlayerStates.climbing;
-            }
+    private void rebuildBody()
+    {
+        if (currentPlayerStateIs == PlayerStates.headOut)
+        {
+            GameObject playerHead = GameObject.FindGameObjectWithTag("head");
+            transform.position = playerHead.transform.position;
+            currentPlayerStateIs = PlayerStates.normal;
+            playerHead.GetComponent<headScript>().lowtiergodNOW();
         }
     }
 
@@ -128,10 +164,11 @@ public class playerMovement : MonoBehaviour
             }
 
         }
-        else if (currentPlayerStateIs == PlayerStates.aiming)
+        else if (currentPlayerStateIs == PlayerStates.aiming && grounded == true)
         {
-            body.velocity = new Vector2(controlMoveValue.x * speed * .25f, body.velocity.y * .25f);
+            body.velocity = new Vector2(controlMoveValue.x * speed * .25f, body.velocity.y * 0.25f);
         }
+
         
 
     }
@@ -148,8 +185,17 @@ public class playerMovement : MonoBehaviour
         }
         else if (currentPlayerStateIs == PlayerStates .aimClimbing)
         {
-            body.velocity = new Vector2(body.velocity.x, speed *.25f);
+            body.velocity = new Vector2(body.velocity.x, speed * 0.25f);
 
+        }
+        else if (currentPlayerStateIs == PlayerStates.headOut)
+        {
+            body.velocity = new Vector2(0f, body.velocity.y);
+        }
+
+        if (transform.position.y <= -6.25f)
+        {
+            transform.position = lastStableGround;
         }
 
     }

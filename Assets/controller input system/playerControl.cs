@@ -37,7 +37,7 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""TriggerHeadThrow"",
+                    ""name"": ""TriggerHeadThrowAim"",
                     ""type"": ""Button"",
                     ""id"": ""9450f86f-f5ec-4d4a-88c7-47e4ec359ab1"",
                     ""expectedControlType"": ""Button"",
@@ -71,6 +71,15 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""TriggerHeadThrow"",
+                    ""type"": ""Button"",
+                    ""id"": ""736b8ae8-a927-4a38-9abe-ed8af1889ff2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -88,11 +97,11 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""4be54c7f-d7e5-4572-9089-24d485889161"",
-                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""TriggerHeadThrow"",
+                    ""action"": ""TriggerHeadThrowAim"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -128,6 +137,17 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
                     ""action"": ""jump/cling"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b9c3d6c2-1843-4af5-98dc-8e36513cbb33"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TriggerHeadThrow"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -137,10 +157,11 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
         // inGameControl
         m_inGameControl = asset.FindActionMap("inGameControl", throwIfNotFound: true);
         m_inGameControl_stickMovement = m_inGameControl.FindAction("stickMovement", throwIfNotFound: true);
-        m_inGameControl_TriggerHeadThrow = m_inGameControl.FindAction("TriggerHeadThrow", throwIfNotFound: true);
+        m_inGameControl_TriggerHeadThrowAim = m_inGameControl.FindAction("TriggerHeadThrowAim", throwIfNotFound: true);
         m_inGameControl_TriggerRebuild = m_inGameControl.FindAction("TriggerRebuild", throwIfNotFound: true);
         m_inGameControl_aimHead = m_inGameControl.FindAction("aimHead", throwIfNotFound: true);
         m_inGameControl_jumpcling = m_inGameControl.FindAction("jump/cling", throwIfNotFound: true);
+        m_inGameControl_TriggerHeadThrow = m_inGameControl.FindAction("TriggerHeadThrow", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -203,19 +224,21 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_inGameControl;
     private List<IInGameControlActions> m_InGameControlActionsCallbackInterfaces = new List<IInGameControlActions>();
     private readonly InputAction m_inGameControl_stickMovement;
-    private readonly InputAction m_inGameControl_TriggerHeadThrow;
+    private readonly InputAction m_inGameControl_TriggerHeadThrowAim;
     private readonly InputAction m_inGameControl_TriggerRebuild;
     private readonly InputAction m_inGameControl_aimHead;
     private readonly InputAction m_inGameControl_jumpcling;
+    private readonly InputAction m_inGameControl_TriggerHeadThrow;
     public struct InGameControlActions
     {
         private @PlayerControl m_Wrapper;
         public InGameControlActions(@PlayerControl wrapper) { m_Wrapper = wrapper; }
         public InputAction @stickMovement => m_Wrapper.m_inGameControl_stickMovement;
-        public InputAction @TriggerHeadThrow => m_Wrapper.m_inGameControl_TriggerHeadThrow;
+        public InputAction @TriggerHeadThrowAim => m_Wrapper.m_inGameControl_TriggerHeadThrowAim;
         public InputAction @TriggerRebuild => m_Wrapper.m_inGameControl_TriggerRebuild;
         public InputAction @aimHead => m_Wrapper.m_inGameControl_aimHead;
         public InputAction @jumpcling => m_Wrapper.m_inGameControl_jumpcling;
+        public InputAction @TriggerHeadThrow => m_Wrapper.m_inGameControl_TriggerHeadThrow;
         public InputActionMap Get() { return m_Wrapper.m_inGameControl; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -228,9 +251,9 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
             @stickMovement.started += instance.OnStickMovement;
             @stickMovement.performed += instance.OnStickMovement;
             @stickMovement.canceled += instance.OnStickMovement;
-            @TriggerHeadThrow.started += instance.OnTriggerHeadThrow;
-            @TriggerHeadThrow.performed += instance.OnTriggerHeadThrow;
-            @TriggerHeadThrow.canceled += instance.OnTriggerHeadThrow;
+            @TriggerHeadThrowAim.started += instance.OnTriggerHeadThrowAim;
+            @TriggerHeadThrowAim.performed += instance.OnTriggerHeadThrowAim;
+            @TriggerHeadThrowAim.canceled += instance.OnTriggerHeadThrowAim;
             @TriggerRebuild.started += instance.OnTriggerRebuild;
             @TriggerRebuild.performed += instance.OnTriggerRebuild;
             @TriggerRebuild.canceled += instance.OnTriggerRebuild;
@@ -240,6 +263,9 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
             @jumpcling.started += instance.OnJumpcling;
             @jumpcling.performed += instance.OnJumpcling;
             @jumpcling.canceled += instance.OnJumpcling;
+            @TriggerHeadThrow.started += instance.OnTriggerHeadThrow;
+            @TriggerHeadThrow.performed += instance.OnTriggerHeadThrow;
+            @TriggerHeadThrow.canceled += instance.OnTriggerHeadThrow;
         }
 
         private void UnregisterCallbacks(IInGameControlActions instance)
@@ -247,9 +273,9 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
             @stickMovement.started -= instance.OnStickMovement;
             @stickMovement.performed -= instance.OnStickMovement;
             @stickMovement.canceled -= instance.OnStickMovement;
-            @TriggerHeadThrow.started -= instance.OnTriggerHeadThrow;
-            @TriggerHeadThrow.performed -= instance.OnTriggerHeadThrow;
-            @TriggerHeadThrow.canceled -= instance.OnTriggerHeadThrow;
+            @TriggerHeadThrowAim.started -= instance.OnTriggerHeadThrowAim;
+            @TriggerHeadThrowAim.performed -= instance.OnTriggerHeadThrowAim;
+            @TriggerHeadThrowAim.canceled -= instance.OnTriggerHeadThrowAim;
             @TriggerRebuild.started -= instance.OnTriggerRebuild;
             @TriggerRebuild.performed -= instance.OnTriggerRebuild;
             @TriggerRebuild.canceled -= instance.OnTriggerRebuild;
@@ -259,6 +285,9 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
             @jumpcling.started -= instance.OnJumpcling;
             @jumpcling.performed -= instance.OnJumpcling;
             @jumpcling.canceled -= instance.OnJumpcling;
+            @TriggerHeadThrow.started -= instance.OnTriggerHeadThrow;
+            @TriggerHeadThrow.performed -= instance.OnTriggerHeadThrow;
+            @TriggerHeadThrow.canceled -= instance.OnTriggerHeadThrow;
         }
 
         public void RemoveCallbacks(IInGameControlActions instance)
@@ -279,9 +308,10 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
     public interface IInGameControlActions
     {
         void OnStickMovement(InputAction.CallbackContext context);
-        void OnTriggerHeadThrow(InputAction.CallbackContext context);
+        void OnTriggerHeadThrowAim(InputAction.CallbackContext context);
         void OnTriggerRebuild(InputAction.CallbackContext context);
         void OnAimHead(InputAction.CallbackContext context);
         void OnJumpcling(InputAction.CallbackContext context);
+        void OnTriggerHeadThrow(InputAction.CallbackContext context);
     }
 }

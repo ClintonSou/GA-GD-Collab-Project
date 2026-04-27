@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "TriggerHeadThrow",
+                    "name": "TriggerHeadThrowAim",
                     "type": "Button",
                     "id": "9450f86f-f5ec-4d4a-88c7-47e4ec359ab1",
                     "expectedControlType": "Button",
@@ -49,6 +49,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerHeadThrow",
+                    "type": "Button",
+                    "id": "736b8ae8-a927-4a38-9abe-ed8af1889ff2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -66,11 +75,11 @@
                 {
                     "name": "",
                     "id": "4be54c7f-d7e5-4572-9089-24d485889161",
-                    "path": "<Gamepad>/rightTrigger",
+                    "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "TriggerHeadThrow",
+                    "action": "TriggerHeadThrowAim",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -104,6 +113,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "jump/cling",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b9c3d6c2-1843-4af5-98dc-8e36513cbb33",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerHeadThrow",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

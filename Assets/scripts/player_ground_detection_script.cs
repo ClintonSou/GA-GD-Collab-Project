@@ -20,6 +20,11 @@ public class player_ground_detection_script : MonoBehaviour
             parent.GetComponent<playerMovement>().grounded = true;
 
         }
+        if ( collision.tag == "stableGround")
+        {
+            parent.GetComponent<playerMovement>().lastStableGround = parent.transform.position;
+
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
