@@ -68,6 +68,7 @@ public class playerMovement : MonoBehaviour
             else if (wallable == true && currentPlayerStateIs == PlayerStates.normal)
             {
                 currentPlayerStateIs = PlayerStates.climbing;
+                body.velocity = new Vector2 (0f, body.velocity.y);
                 isClimbing = true;
             }
             else if (currentPlayerStateIs == PlayerStates.climbing)
