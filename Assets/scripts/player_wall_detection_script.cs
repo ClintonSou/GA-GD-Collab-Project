@@ -26,6 +26,11 @@ public class player_wall_detection_script : MonoBehaviour
     {
         if (collision.tag == "ziplineWall")
         {
+            if (parent.GetComponent<playerMovement>().currentPlayerStateIs == playerMovement.PlayerStates.climbing || parent.GetComponent<playerMovement>().currentPlayerStateIs == playerMovement.PlayerStates.aimClimbing)
+            {
+                parent.GetComponent<playerMovement>().isClimbing = false;
+                parent.GetComponent<playerMovement>().currentPlayerStateIs = playerMovement.PlayerStates.normal;
+            }
             parent.GetComponent<playerMovement>().wallable = false;
 
         }

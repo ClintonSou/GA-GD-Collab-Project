@@ -1769,7 +1769,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 581475952490855198, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 581475952490855198, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: m_SortingOrder
@@ -1781,7 +1781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2293113816664531186, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: speed
-      value: 4.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2293113816664531186, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: airSpeed
@@ -1789,11 +1789,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2293113816664531186, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: jumpHeight
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2590572579647473953, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2590572579647473953, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: m_SortingOrder
@@ -1871,7 +1871,8 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3138088160739387300, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12639,7 +12640,7 @@ GameObject:
   - component: {fileID: 1496706863}
   m_Layer: 0
   m_Name: ziplineWall
-  m_TagString: Untagged
+  m_TagString: ziplineWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
