@@ -1848,7 +1848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5605493686429836765, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: m_Name
-      value: player (1)
+      value: player
       objectReference: {fileID: 0}
     - target: {fileID: 7753331403843633742, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: m_IsTrigger
@@ -3023,7 +3023,7 @@ GameObject:
   - component: {fileID: 325059985}
   - component: {fileID: 325059986}
   m_Layer: 0
-  m_Name: lvl1_mushroom 1 (2)
+  m_Name: lvl1_mushroom 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10487,7 +10487,7 @@ GameObject:
   - component: {fileID: 1199825885}
   - component: {fileID: 1199825886}
   m_Layer: 0
-  m_Name: lvl1_mushroom 1 (1)
+  m_Name: lvl1_mushroom 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11493,7 +11493,7 @@ GameObject:
   - component: {fileID: 1320394168}
   - component: {fileID: 1320394169}
   m_Layer: 0
-  m_Name: lvl1_frontBackground (1)
+  m_Name: lvl1_backBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
