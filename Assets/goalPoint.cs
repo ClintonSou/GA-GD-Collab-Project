@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.Search.Providers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -27,10 +26,10 @@ public class goalPoint : MonoBehaviour
 
         if (sceneName == ("scene_2"))
         {
-            SceneManager.LoadScene("scene_3");
+            SceneManager.LoadScene("scene_3_new");
         }
 
-        if (sceneName == ("scene_3"))
+        if (sceneName == ("scene_3_new"))
         {
 
         }

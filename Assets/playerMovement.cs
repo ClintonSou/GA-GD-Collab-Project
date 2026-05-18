@@ -14,6 +14,7 @@ public class playerMovement : MonoBehaviour
 
     public float jumpHeight;
     public float speed;
+    public float lowerLimit;
 
     PlayerControl control;
     public GameObject head;
@@ -194,7 +195,7 @@ public class playerMovement : MonoBehaviour
             body.velocity = new Vector2(0f, body.velocity.y);
         }
 
-        if (transform.position.y <= -6.25f)
+        if (transform.position.y <= lowerLimit)
         {
             transform.position = lastStableGround;
         }
