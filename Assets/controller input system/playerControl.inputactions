@@ -1,0 +1,134 @@
+{
+    "name": "playerControl",
+    "maps": [
+        {
+            "name": "inGameControl",
+            "id": "a7b7fb76-47fa-4561-a2a5-f1023351948c",
+            "actions": [
+                {
+                    "name": "stickMovement",
+                    "type": "Value",
+                    "id": "b6ed247e-cb2d-4b0a-b20f-648dec7d3af2",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "TriggerHeadThrowAim",
+                    "type": "Button",
+                    "id": "9450f86f-f5ec-4d4a-88c7-47e4ec359ab1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerRebuild",
+                    "type": "Button",
+                    "id": "8cd5291b-35ae-4834-86b6-bc794d3eec4e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "aimHead",
+                    "type": "Value",
+                    "id": "8c7c536a-5e77-4e9b-905a-5f61adc3f8d4",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "jump/cling",
+                    "type": "Button",
+                    "id": "89fea38b-2b29-4e62-8049-d0765679796d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerHeadThrow",
+                    "type": "Button",
+                    "id": "736b8ae8-a927-4a38-9abe-ed8af1889ff2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "52f35105-fe8a-4b38-8880-6bc13b9d7f89",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "stickMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4be54c7f-d7e5-4572-9089-24d485889161",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerHeadThrowAim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "31c617f8-9e9d-46fc-9991-54b9cadd73cb",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerRebuild",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "46ee7940-39aa-46cd-b314-7d0491bf0231",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "aimHead",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "da2fb662-db55-4706-b5fa-8b31ed3902e4",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "jump/cling",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b9c3d6c2-1843-4af5-98dc-8e36513cbb33",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerHeadThrow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
