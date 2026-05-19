@@ -105,11 +105,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.cinemachine": {
-<<<<<<< Updated upstream
       "version": "2.10.6",
-=======
-      "version": "2.10.7",
->>>>>>> Stashed changes
       "depth": 0,
       "source": "registry",
       "dependencies": {
