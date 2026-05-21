@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dce101260ecb6b346bbf1ec9efc9c6f7
+guid: cc61b11acd1931242b2e73d54cd52d9e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,11 +97,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_0
+      name: V3 PlayerHeadThrow_ spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2108
+        y: 2800
         width: 700
         height: 700
       alignment: 0
@@ -111,18 +111,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 719f94c9ba7f5a44ebe799c25d339fbe
-      internalID: 1425980531
+      spriteID: af51bf5347744944598ad040c718dfc3
+      internalID: -1549284573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_1
+      name: V3 PlayerHeadThrow_ spritesheet_1
       rect:
         serializedVersion: 2
         x: 700
-        y: 2108
+        y: 2800
         width: 700
         height: 700
       alignment: 0
@@ -132,18 +132,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d64cdcb41c1f61b47a2c44b01338f219
-      internalID: -1774317838
+      spriteID: 0d04fdf4757aee94995f735dd3a6f754
+      internalID: 620988711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_2
+      name: V3 PlayerHeadThrow_ spritesheet_2
       rect:
         serializedVersion: 2
         x: 1400
-        y: 2108
+        y: 2800
         width: 700
         height: 700
       alignment: 0
@@ -153,18 +153,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ef93d3356f33dc4ab45963bff003943
-      internalID: 668351957
+      spriteID: bf00eb4de7339504fa8b47442e9de481
+      internalID: -1857933288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_3
+      name: V3 PlayerHeadThrow_ spritesheet_3
       rect:
         serializedVersion: 2
         x: 2100
-        y: 2108
+        y: 2800
         width: 700
         height: 700
       alignment: 0
@@ -174,18 +174,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fc619b54bb3f4c4b8167acb2794123c
-      internalID: 816188784
+      spriteID: 027ec3d5f49af4b47b54b3165b6d095e
+      internalID: -1294300239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_4
+      name: V3 PlayerHeadThrow_ spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2800
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d855feeb8aa4f44b40f19ff217ff45
+      internalID: 1742451242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerHeadThrow_ spritesheet_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 1408
+        y: 2100
         width: 700
         height: 700
       alignment: 0
@@ -195,18 +216,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd84d4eab54c8ad43988d7b0ba52d555
-      internalID: -315865858
+      spriteID: 2bc6033bce66f524fa57eee5a0fd6743
+      internalID: -503057529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_5
+      name: V3 PlayerHeadThrow_ spritesheet_6
       rect:
         serializedVersion: 2
         x: 700
-        y: 1408
+        y: 2100
         width: 700
         height: 700
       alignment: 0
@@ -216,18 +237,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a8a692fe7b5bab499beb78ebb1e4059
-      internalID: -1885823164
+      spriteID: aaadcfe2243aeeb4486b12bb1f4662da
+      internalID: 890586213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_6
+      name: V3 PlayerHeadThrow_ spritesheet_7
       rect:
         serializedVersion: 2
         x: 1400
-        y: 1408
+        y: 2100
         width: 700
         height: 700
       alignment: 0
@@ -237,18 +258,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18e0af181dc686f4ea38dc7768716f02
-      internalID: 564281884
+      spriteID: 757a44ce8e6ba5e46a39f0fb731ca573
+      internalID: -269947718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_7
+      name: V3 PlayerHeadThrow_ spritesheet_8
       rect:
         serializedVersion: 2
         x: 2100
-        y: 1408
+        y: 2100
         width: 700
         height: 700
       alignment: 0
@@ -258,18 +279,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71397967997f34041b039e9d281fd7ca
-      internalID: 1642264829
+      spriteID: c3537e649ef3c4441b196df2b5e9dd60
+      internalID: 926122507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_8
+      name: V3 PlayerHeadThrow_ spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2100
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1dba5fc181add4091a823757f00666
+      internalID: 847200192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerHeadThrow_ spritesheet_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 708
+        y: 1400
         width: 700
         height: 700
       alignment: 0
@@ -279,18 +321,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1cad39609d62bb47b78f74c027a7976
-      internalID: -630073724
+      spriteID: baa0bc43a2e1ca942ae7f4786f678057
+      internalID: -1043091087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_9
+      name: V3 PlayerHeadThrow_ spritesheet_11
       rect:
         serializedVersion: 2
         x: 700
-        y: 708
+        y: 1400
         width: 700
         height: 700
       alignment: 0
@@ -300,18 +342,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e9ac4fa5115b304393a1ddaeef98ce1
-      internalID: -724403035
+      spriteID: c589276064375764cb30204aeb26c9bc
+      internalID: 584592248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_10
+      name: V3 PlayerHeadThrow_ spritesheet_12
       rect:
         serializedVersion: 2
         x: 1400
-        y: 708
+        y: 1400
         width: 700
         height: 700
       alignment: 0
@@ -321,18 +363,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1f35700500e6b740a00aec3093e9510
-      internalID: 1880308122
+      spriteID: 961c5f1a3d23617429006d88b7362a1d
+      internalID: 575032407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_11
+      name: V3 PlayerHeadThrow_ spritesheet_13
       rect:
         serializedVersion: 2
         x: 2100
-        y: 708
+        y: 1400
         width: 700
         height: 700
       alignment: 0
@@ -342,18 +384,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b4e9fc97a791474096345de48d92841
-      internalID: -126062533
+      spriteID: f3ae0b27b32b01841a4ab562c474c9ca
+      internalID: 1691707257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_12
+      name: V3 PlayerHeadThrow_ spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1400
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cc846f132f0024ab03b8a7eaeb906f
+      internalID: -1131822880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerHeadThrow_ spritesheet_15
       rect:
         serializedVersion: 2
         x: 0
-        y: 8
+        y: 700
         width: 700
         height: 700
       alignment: 0
@@ -363,18 +426,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2964957d119ee24aa87ae6faa7903b0
-      internalID: 2078315403
+      spriteID: 5de4c82a95052a24ca120304383f72c7
+      internalID: 1602386807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_13
+      name: V3 PlayerHeadThrow_ spritesheet_16
       rect:
         serializedVersion: 2
         x: 700
-        y: 8
+        y: 700
         width: 700
         height: 700
       alignment: 0
@@ -384,18 +447,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d929bacf3c3f85c45acee33d8523e119
-      internalID: -1641960141
+      spriteID: 5f47b439bc6c406449a7e94d80cb36aa
+      internalID: -1680175578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_14
+      name: V3 PlayerHeadThrow_ spritesheet_17
       rect:
         serializedVersion: 2
         x: 1400
-        y: 8
+        y: 700
         width: 700
         height: 700
       alignment: 0
@@ -405,8 +468,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 011910b5a35ff6d47b24c1a41a3e4c6d
-      internalID: -354588560
+      spriteID: 47509a0f03398794f8e0a9abc527f316
+      internalID: -210079981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerHeadThrow_ spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 700
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1fd7f606cd090468f6cdef7db1fe55
+      internalID: 2110086207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerHeadThrow_ spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 700
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762e1e6d017da6241af3506bd1cd6fac
+      internalID: -1914322901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerHeadThrow_ spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd6edb0186ba9d4eb1da5e5cb1c8542
+      internalID: 1887499415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerHeadThrow_ spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd56d1c862219d34492c589db5a1715c
+      internalID: -1299532806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerHeadThrow_ spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8946eb6b50027e419248e4ae7db58b0
+      internalID: 2107816316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerHeadThrow_ spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc6670fc61564f4385af8d4e80bfe40
+      internalID: 1110103260
       vertices: []
       indices: 
       edges: []
@@ -422,21 +611,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      V3 PlayerIdle_ spritesheet_0: 1425980531
-      V3 PlayerIdle_ spritesheet_1: -1774317838
-      V3 PlayerIdle_ spritesheet_10: 1880308122
-      V3 PlayerIdle_ spritesheet_11: -126062533
-      V3 PlayerIdle_ spritesheet_12: 2078315403
-      V3 PlayerIdle_ spritesheet_13: -1641960141
-      V3 PlayerIdle_ spritesheet_14: -354588560
-      V3 PlayerIdle_ spritesheet_2: 668351957
-      V3 PlayerIdle_ spritesheet_3: 816188784
-      V3 PlayerIdle_ spritesheet_4: -315865858
-      V3 PlayerIdle_ spritesheet_5: -1885823164
-      V3 PlayerIdle_ spritesheet_6: 564281884
-      V3 PlayerIdle_ spritesheet_7: 1642264829
-      V3 PlayerIdle_ spritesheet_8: -630073724
-      V3 PlayerIdle_ spritesheet_9: -724403035
+      V3 PlayerHeadThrow_ spritesheet_0: -1549284573
+      V3 PlayerHeadThrow_ spritesheet_1: 620988711
+      V3 PlayerHeadThrow_ spritesheet_10: -1043091087
+      V3 PlayerHeadThrow_ spritesheet_11: 584592248
+      V3 PlayerHeadThrow_ spritesheet_12: 575032407
+      V3 PlayerHeadThrow_ spritesheet_13: 1691707257
+      V3 PlayerHeadThrow_ spritesheet_14: -1131822880
+      V3 PlayerHeadThrow_ spritesheet_15: 1602386807
+      V3 PlayerHeadThrow_ spritesheet_16: -1680175578
+      V3 PlayerHeadThrow_ spritesheet_17: -210079981
+      V3 PlayerHeadThrow_ spritesheet_18: 2110086207
+      V3 PlayerHeadThrow_ spritesheet_19: -1914322901
+      V3 PlayerHeadThrow_ spritesheet_2: -1857933288
+      V3 PlayerHeadThrow_ spritesheet_20: 1887499415
+      V3 PlayerHeadThrow_ spritesheet_21: -1299532806
+      V3 PlayerHeadThrow_ spritesheet_22: 2107816316
+      V3 PlayerHeadThrow_ spritesheet_23: 1110103260
+      V3 PlayerHeadThrow_ spritesheet_3: -1294300239
+      V3 PlayerHeadThrow_ spritesheet_4: 1742451242
+      V3 PlayerHeadThrow_ spritesheet_5: -503057529
+      V3 PlayerHeadThrow_ spritesheet_6: 890586213
+      V3 PlayerHeadThrow_ spritesheet_7: -269947718
+      V3 PlayerHeadThrow_ spritesheet_8: 926122507
+      V3 PlayerHeadThrow_ spritesheet_9: 847200192
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

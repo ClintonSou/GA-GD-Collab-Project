@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: V3 PlayerWallstick_ spritesheet_0
+      name: V3 PlayerWallStick_ spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1875
-        width: 1250
-        height: 625
+        y: 2800
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af13a5489b8bb2d4598b236806e37a6c
-      internalID: 1807857074
+      spriteID: 54f71199666a89547903fbac14a0f224
+      internalID: 1606948221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerWallstick_ spritesheet_1
+      name: V3 PlayerWallStick_ spritesheet_1
       rect:
         serializedVersion: 2
-        x: 1250
-        y: 1875
-        width: 1250
-        height: 625
+        x: 700
+        y: 2800
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7e9d0aa27503a84ba4191f2892c8799
-      internalID: 1043928822
+      spriteID: 4b701ee42db37894c9453a313842f15c
+      internalID: -646076167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerWallstick_ spritesheet_2
+      name: V3 PlayerWallStick_ spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2800
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905008e3ba6373d46b904a61149b086e
+      internalID: -1190923023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2800
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c3903f7dd4a8e408fd71829d25cd5e
+      internalID: -1321730647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2800
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59dd1d046d8770a4f8a2239914831c4d
+      internalID: 517690693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 1250
-        width: 1250
-        height: 625
+        y: 2100
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46a39c0947400a84e99ac0e78a2b3ace
-      internalID: -885042738
+      spriteID: c486a9a23e5f5a94d85d97446bf4d2b4
+      internalID: -1651653744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerWallstick_ spritesheet_3
+      name: V3 PlayerWallStick_ spritesheet_6
       rect:
         serializedVersion: 2
-        x: 1250
-        y: 1250
-        width: 1250
-        height: 625
+        x: 700
+        y: 2100
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +237,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e1fc91aff5b18741891852ce91b538c
-      internalID: 106539633
+      spriteID: 5bf2f78bb0cf3a04d99a99a1162fafda
+      internalID: -1851691326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerWallstick_ spritesheet_4
+      name: V3 PlayerWallStick_ spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2100
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e17d04f1b8c3534aa9f8a396c343d89
+      internalID: -1769122994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2100
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4922b6093a6adcd499a181a78f99a777
+      internalID: 1957610626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2100
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd24c61b68cb22c409ece2ec30a0ed91
+      internalID: -1664338039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 625
-        width: 1250
-        height: 625
+        y: 1400
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +321,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8b1c3ccd32d0f346834839697f5496e
-      internalID: 12394393
+      spriteID: 0cced15a7bb6e714f81a86ab88cccb90
+      internalID: -868842052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerWallstick_ spritesheet_5
+      name: V3 PlayerWallStick_ spritesheet_11
       rect:
         serializedVersion: 2
-        x: 1250
-        y: 625
-        width: 1250
-        height: 625
+        x: 700
+        y: 1400
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +342,188 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f2276d0062aaa64d8fcfd8b25bc5e78
-      internalID: 165391784
+      spriteID: 64f542b04ff394145b863686f3381581
+      internalID: -1313136284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerWallstick_ spritesheet_6
+      name: V3 PlayerWallStick_ spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1400
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816f9452b1677e84fb60a1f7a6fa7cfe
+      internalID: -1903090958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1400
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76095f5499261547b2976162387b701
+      internalID: 52188846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1400
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e0e2eb4a38e8744bce2534da56f09f
+      internalID: -823080425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365e1721b7bb63e4aa84896383a48e57
+      internalID: 1595602710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 700
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec41dbb1e04a4914abca873d846bc4d3
+      internalID: 1002092146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 700
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e317ad763c33cf64f8275eb6832bc84f
+      internalID: 206761710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 700
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ad3ea3db11a3e4299c3ac06497c7b1
+      internalID: -1414591062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 700
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3793228305d6204a84b57242ed6b7f5
+      internalID: 131192461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_20
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1250
-        height: 625
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +531,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d1049550ca7c2945ae2ba079cbb00d1
-      internalID: 132440485
+      spriteID: 865fb3feb476c194bb9ae9c282292d37
+      internalID: -1069267644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerWallstick_ spritesheet_7
+      name: V3 PlayerWallStick_ spritesheet_21
       rect:
         serializedVersion: 2
-        x: 1250
+        x: 700
         y: 0
-        width: 1250
-        height: 625
+        width: 700
+        height: 700
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,8 +552,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a9a56d764701ff408905b9abe69bca0
-      internalID: 1466949792
+      spriteID: 3a0e85c890f29a84480b3d8d7eebacfd
+      internalID: 1430641581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991c609ded16da74889e3c44158d4a80
+      internalID: 1358111546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerWallStick_ spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24748fbb2e133d945b720b67ccfcf1fb
+      internalID: -93954491
       vertices: []
       indices: 
       edges: []
@@ -275,14 +611,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      V3 PlayerWallstick_ spritesheet_0: 1807857074
-      V3 PlayerWallstick_ spritesheet_1: 1043928822
-      V3 PlayerWallstick_ spritesheet_2: -885042738
-      V3 PlayerWallstick_ spritesheet_3: 106539633
-      V3 PlayerWallstick_ spritesheet_4: 12394393
-      V3 PlayerWallstick_ spritesheet_5: 165391784
-      V3 PlayerWallstick_ spritesheet_6: 132440485
-      V3 PlayerWallstick_ spritesheet_7: 1466949792
+      V3 PlayerWallStick_ spritesheet_0: 1606948221
+      V3 PlayerWallStick_ spritesheet_1: -646076167
+      V3 PlayerWallStick_ spritesheet_10: -868842052
+      V3 PlayerWallStick_ spritesheet_11: -1313136284
+      V3 PlayerWallStick_ spritesheet_12: -1903090958
+      V3 PlayerWallStick_ spritesheet_13: 52188846
+      V3 PlayerWallStick_ spritesheet_14: -823080425
+      V3 PlayerWallStick_ spritesheet_15: 1595602710
+      V3 PlayerWallStick_ spritesheet_16: 1002092146
+      V3 PlayerWallStick_ spritesheet_17: 206761710
+      V3 PlayerWallStick_ spritesheet_18: -1414591062
+      V3 PlayerWallStick_ spritesheet_19: 131192461
+      V3 PlayerWallStick_ spritesheet_2: -1190923023
+      V3 PlayerWallStick_ spritesheet_20: -1069267644
+      V3 PlayerWallStick_ spritesheet_21: 1430641581
+      V3 PlayerWallStick_ spritesheet_22: 1358111546
+      V3 PlayerWallStick_ spritesheet_23: -93954491
+      V3 PlayerWallStick_ spritesheet_3: -1321730647
+      V3 PlayerWallStick_ spritesheet_4: 517690693
+      V3 PlayerWallStick_ spritesheet_5: -1651653744
+      V3 PlayerWallStick_ spritesheet_6: -1851691326
+      V3 PlayerWallStick_ spritesheet_7: -1769122994
+      V3 PlayerWallStick_ spritesheet_8: 1957610626
+      V3 PlayerWallStick_ spritesheet_9: -1664338039
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

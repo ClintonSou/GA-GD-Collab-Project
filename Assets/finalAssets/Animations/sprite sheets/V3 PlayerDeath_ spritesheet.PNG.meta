@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dce101260ecb6b346bbf1ec9efc9c6f7
+guid: 668afb1530ca74844bde8c3558cfc0c8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,11 +97,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_0
+      name: V3 PlayerDeath_ spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2108
+        y: 2100
         width: 700
         height: 700
       alignment: 0
@@ -111,18 +111,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 719f94c9ba7f5a44ebe799c25d339fbe
-      internalID: 1425980531
+      spriteID: 8c4f223c68c2a7443b8f61975dad148e
+      internalID: -1866471052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_1
+      name: V3 PlayerDeath_ spritesheet_1
       rect:
         serializedVersion: 2
         x: 700
-        y: 2108
+        y: 2100
         width: 700
         height: 700
       alignment: 0
@@ -132,18 +132,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d64cdcb41c1f61b47a2c44b01338f219
-      internalID: -1774317838
+      spriteID: 918c78906664a174dbca0cd7119c50b6
+      internalID: -622384093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_2
+      name: V3 PlayerDeath_ spritesheet_2
       rect:
         serializedVersion: 2
         x: 1400
-        y: 2108
+        y: 2100
         width: 700
         height: 700
       alignment: 0
@@ -153,18 +153,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ef93d3356f33dc4ab45963bff003943
-      internalID: 668351957
+      spriteID: c4d95e5356f7af7478013c30a75128ef
+      internalID: 1955795840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_3
+      name: V3 PlayerDeath_ spritesheet_3
       rect:
         serializedVersion: 2
         x: 2100
-        y: 2108
+        y: 2100
         width: 700
         height: 700
       alignment: 0
@@ -174,18 +174,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fc619b54bb3f4c4b8167acb2794123c
-      internalID: 816188784
+      spriteID: b65cbe332b2351c4f9b54d9b1f511920
+      internalID: -1141108321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_4
+      name: V3 PlayerDeath_ spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2100
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287b5a5cdac528643942a0f9d646f44f
+      internalID: -392349803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerDeath_ spritesheet_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 1408
+        y: 1400
         width: 700
         height: 700
       alignment: 0
@@ -195,18 +216,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd84d4eab54c8ad43988d7b0ba52d555
-      internalID: -315865858
+      spriteID: c1f893fa686f5624a912572efd207cb0
+      internalID: 38331335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_5
+      name: V3 PlayerDeath_ spritesheet_6
       rect:
         serializedVersion: 2
         x: 700
-        y: 1408
+        y: 1400
         width: 700
         height: 700
       alignment: 0
@@ -216,18 +237,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a8a692fe7b5bab499beb78ebb1e4059
-      internalID: -1885823164
+      spriteID: 320854f2b22937643abff5dfe94f4b88
+      internalID: 400174413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_6
+      name: V3 PlayerDeath_ spritesheet_7
       rect:
         serializedVersion: 2
         x: 1400
-        y: 1408
+        y: 1400
         width: 700
         height: 700
       alignment: 0
@@ -237,18 +258,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18e0af181dc686f4ea38dc7768716f02
-      internalID: 564281884
+      spriteID: faeda5e59cfe4674cae2326bd3421051
+      internalID: -1356651381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_7
+      name: V3 PlayerDeath_ spritesheet_8
       rect:
         serializedVersion: 2
         x: 2100
-        y: 1408
+        y: 1400
         width: 700
         height: 700
       alignment: 0
@@ -258,18 +279,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71397967997f34041b039e9d281fd7ca
-      internalID: 1642264829
+      spriteID: 58631a50808b07a4d9371e836e33a39c
+      internalID: 972554606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_8
+      name: V3 PlayerDeath_ spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1400
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cab9e565edf294e902dca1c0d20a07
+      internalID: -905963789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerDeath_ spritesheet_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 708
+        y: 700
         width: 700
         height: 700
       alignment: 0
@@ -279,18 +321,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1cad39609d62bb47b78f74c027a7976
-      internalID: -630073724
+      spriteID: f4a325c8f1ebcb745b80e82d8da3982c
+      internalID: -54674467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_9
+      name: V3 PlayerDeath_ spritesheet_11
       rect:
         serializedVersion: 2
         x: 700
-        y: 708
+        y: 700
         width: 700
         height: 700
       alignment: 0
@@ -300,18 +342,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e9ac4fa5115b304393a1ddaeef98ce1
-      internalID: -724403035
+      spriteID: bda8faede113dfb48a74c62f72fecaf0
+      internalID: -1221611066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_10
+      name: V3 PlayerDeath_ spritesheet_12
       rect:
         serializedVersion: 2
         x: 1400
-        y: 708
+        y: 700
         width: 700
         height: 700
       alignment: 0
@@ -321,18 +363,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1f35700500e6b740a00aec3093e9510
-      internalID: 1880308122
+      spriteID: 3d39f236c3c7ed248a6230e779a4e5a4
+      internalID: 1368203628
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_11
+      name: V3 PlayerDeath_ spritesheet_13
       rect:
         serializedVersion: 2
         x: 2100
-        y: 708
+        y: 700
         width: 700
         height: 700
       alignment: 0
@@ -342,18 +384,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b4e9fc97a791474096345de48d92841
-      internalID: -126062533
+      spriteID: 5c707eef805b9f34195ceb7da15b711f
+      internalID: 697768078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_12
+      name: V3 PlayerDeath_ spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 700
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b14fa680bc74094a9679f62cb159dcc
+      internalID: -1852404515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerDeath_ spritesheet_15
       rect:
         serializedVersion: 2
         x: 0
-        y: 8
+        y: 0
         width: 700
         height: 700
       alignment: 0
@@ -363,18 +426,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2964957d119ee24aa87ae6faa7903b0
-      internalID: 2078315403
+      spriteID: 013f0d9e011171c42a9a52bf9ba8b5a9
+      internalID: 1381666627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_13
+      name: V3 PlayerDeath_ spritesheet_16
       rect:
         serializedVersion: 2
         x: 700
-        y: 8
+        y: 0
         width: 700
         height: 700
       alignment: 0
@@ -384,18 +447,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d929bacf3c3f85c45acee33d8523e119
-      internalID: -1641960141
+      spriteID: c225d9b9dbb45b2458dbf0ba5ea90133
+      internalID: 884132877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerIdle_ spritesheet_14
+      name: V3 PlayerDeath_ spritesheet_17
       rect:
         serializedVersion: 2
         x: 1400
-        y: 8
+        y: 0
         width: 700
         height: 700
       alignment: 0
@@ -405,8 +468,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 011910b5a35ff6d47b24c1a41a3e4c6d
-      internalID: -354588560
+      spriteID: 1114fa1e9e59da343859f057f5fb2a98
+      internalID: -58566236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerDeath_ spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d6c659010fb0e4a857e821fefed2b3
+      internalID: -507940895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: V3 PlayerDeath_ spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 700
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4768736f944f64459435ecce29dcbd9
+      internalID: 2075005423
       vertices: []
       indices: 
       edges: []
@@ -422,21 +527,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      V3 PlayerIdle_ spritesheet_0: 1425980531
-      V3 PlayerIdle_ spritesheet_1: -1774317838
-      V3 PlayerIdle_ spritesheet_10: 1880308122
-      V3 PlayerIdle_ spritesheet_11: -126062533
-      V3 PlayerIdle_ spritesheet_12: 2078315403
-      V3 PlayerIdle_ spritesheet_13: -1641960141
-      V3 PlayerIdle_ spritesheet_14: -354588560
-      V3 PlayerIdle_ spritesheet_2: 668351957
-      V3 PlayerIdle_ spritesheet_3: 816188784
-      V3 PlayerIdle_ spritesheet_4: -315865858
-      V3 PlayerIdle_ spritesheet_5: -1885823164
-      V3 PlayerIdle_ spritesheet_6: 564281884
-      V3 PlayerIdle_ spritesheet_7: 1642264829
-      V3 PlayerIdle_ spritesheet_8: -630073724
-      V3 PlayerIdle_ spritesheet_9: -724403035
+      V3 PlayerDeath_ spritesheet_0: -1866471052
+      V3 PlayerDeath_ spritesheet_1: -622384093
+      V3 PlayerDeath_ spritesheet_10: -54674467
+      V3 PlayerDeath_ spritesheet_11: -1221611066
+      V3 PlayerDeath_ spritesheet_12: 1368203628
+      V3 PlayerDeath_ spritesheet_13: 697768078
+      V3 PlayerDeath_ spritesheet_14: -1852404515
+      V3 PlayerDeath_ spritesheet_15: 1381666627
+      V3 PlayerDeath_ spritesheet_16: 884132877
+      V3 PlayerDeath_ spritesheet_17: -58566236
+      V3 PlayerDeath_ spritesheet_18: -507940895
+      V3 PlayerDeath_ spritesheet_19: 2075005423
+      V3 PlayerDeath_ spritesheet_2: 1955795840
+      V3 PlayerDeath_ spritesheet_3: -1141108321
+      V3 PlayerDeath_ spritesheet_4: -392349803
+      V3 PlayerDeath_ spritesheet_5: 38331335
+      V3 PlayerDeath_ spritesheet_6: 400174413
+      V3 PlayerDeath_ spritesheet_7: -1356651381
+      V3 PlayerDeath_ spritesheet_8: 972554606
+      V3 PlayerDeath_ spritesheet_9: -905963789
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

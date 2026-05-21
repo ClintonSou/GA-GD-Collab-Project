@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8ac8fe5298b191e4a80ea5d7a56e77d8
+guid: 6f4b70592c0a71f458b32ace8d7828c6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,11 +97,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_0
+      name: V3 PlayerSpawnEmerge_ spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2810
+        y: 2800
         width: 700
         height: 700
       alignment: 0
@@ -111,18 +111,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b550a3bd76e56742a4abe43cb2c5514
-      internalID: -1928569106
+      spriteID: 797eb2eab77d281418250cf4050cfc8c
+      internalID: -693459827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_1
+      name: V3 PlayerSpawnEmerge_ spritesheet_1
       rect:
         serializedVersion: 2
         x: 700
-        y: 2810
+        y: 2800
         width: 700
         height: 700
       alignment: 0
@@ -132,18 +132,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72c1cddf3a10f7845b5d02d958ef76c2
-      internalID: -711308308
+      spriteID: 44f8e19d4f1c24d49a1190330d10a24c
+      internalID: 1968636997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_2
+      name: V3 PlayerSpawnEmerge_ spritesheet_2
       rect:
         serializedVersion: 2
         x: 1400
-        y: 2810
+        y: 2800
         width: 700
         height: 700
       alignment: 0
@@ -153,18 +153,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3f7dfc41e5892e4984fdd17c50380d5
-      internalID: 1053062299
+      spriteID: d7d526d779bc7ca49a16d7e3e3ebf464
+      internalID: 403188077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_3
+      name: V3 PlayerSpawnEmerge_ spritesheet_3
       rect:
         serializedVersion: 2
         x: 2100
-        y: 2810
+        y: 2800
         width: 700
         height: 700
       alignment: 0
@@ -174,18 +174,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f689b662af817fa4ab1098e47cd8e97d
-      internalID: 2135512948
+      spriteID: c9a5abf701ac50f4ab5fcd36bc8effb4
+      internalID: -1736621003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_4
+      name: V3 PlayerSpawnEmerge_ spritesheet_4
       rect:
         serializedVersion: 2
         x: 2800
-        y: 2810
+        y: 2800
         width: 700
         height: 700
       alignment: 0
@@ -195,39 +195,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb5ae51069116154a82213b0b29fd2ce
-      internalID: -2050568252
+      spriteID: 17c09ff6239b6dc45b6664cf4fb2ce4d
+      internalID: 1832350602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 3500
-        y: 2810
-        width: 700
-        height: 700
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 963f4591ce0d71b40a03fa1f06dd52a4
-      internalID: -1689667615
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_6
+      name: V3 PlayerSpawnEmerge_ spritesheet_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 2110
+        y: 2100
         width: 700
         height: 700
       alignment: 0
@@ -237,18 +216,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9af13ac0d034994eb25f4f6eff01929
-      internalID: 501114654
+      spriteID: a6041011d947b014ba76d57da63b9f5b
+      internalID: -393778798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_7
+      name: V3 PlayerSpawnEmerge_ spritesheet_6
       rect:
         serializedVersion: 2
         x: 700
-        y: 2110
+        y: 2100
         width: 700
         height: 700
       alignment: 0
@@ -258,18 +237,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38e92374b37889b4399799c682804286
-      internalID: 257864539
+      spriteID: 7de8d23859a8a1e4487cfda0eddf9002
+      internalID: 1788510500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_8
+      name: V3 PlayerSpawnEmerge_ spritesheet_7
       rect:
         serializedVersion: 2
         x: 1400
-        y: 2110
+        y: 2100
         width: 700
         height: 700
       alignment: 0
@@ -279,18 +258,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c52462329c5bf642b398f04a956e015
-      internalID: 1030181915
+      spriteID: 574d244280590ff4ba06f34681428abf
+      internalID: -1204312914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_9
+      name: V3 PlayerSpawnEmerge_ spritesheet_8
       rect:
         serializedVersion: 2
         x: 2100
-        y: 2110
+        y: 2100
         width: 700
         height: 700
       alignment: 0
@@ -300,18 +279,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a91a129125c11c4e9fb6f01e3b14b17
-      internalID: 1547708871
+      spriteID: ff07f5ec442d2924aac982242bd925c6
+      internalID: 1331726175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_10
+      name: V3 PlayerSpawnEmerge_ spritesheet_9
       rect:
         serializedVersion: 2
         x: 2800
-        y: 2110
+        y: 2100
         width: 700
         height: 700
       alignment: 0
@@ -321,39 +300,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b69929202676bff4a95897aab2d20962
-      internalID: -2104512452
+      spriteID: 618cd42ee97794945b2c95fcf32f59ad
+      internalID: -1970128626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_11
-      rect:
-        serializedVersion: 2
-        x: 3500
-        y: 2110
-        width: 700
-        height: 700
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 255065708a10bc9498788b69af69afbc
-      internalID: -1497174899
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_12
+      name: V3 PlayerSpawnEmerge_ spritesheet_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 1410
+        y: 1400
         width: 700
         height: 700
       alignment: 0
@@ -363,18 +321,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a086428f2d43df94d8266ca4d5dd1f8b
-      internalID: 754629924
+      spriteID: 75813185a10e5c34dbf1b98dcad0499e
+      internalID: 491444652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_13
+      name: V3 PlayerSpawnEmerge_ spritesheet_11
       rect:
         serializedVersion: 2
         x: 700
-        y: 1410
+        y: 1400
         width: 700
         height: 700
       alignment: 0
@@ -384,18 +342,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80b1e1e4dcd361f46a81bcd5b33a9c2f
-      internalID: 1546275872
+      spriteID: 6c62684ba5c0c014aa0ca6d74217b658
+      internalID: -1596690126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_14
+      name: V3 PlayerSpawnEmerge_ spritesheet_12
       rect:
         serializedVersion: 2
         x: 1400
-        y: 1410
+        y: 1400
         width: 700
         height: 700
       alignment: 0
@@ -405,18 +363,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2c74254cd52d25488b538e4d6a24216
-      internalID: -460950673
+      spriteID: c7b3fa30b21ed4542a9ff0046aa2883d
+      internalID: -1661159325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_15
+      name: V3 PlayerSpawnEmerge_ spritesheet_13
       rect:
         serializedVersion: 2
         x: 2100
-        y: 1410
+        y: 1400
         width: 700
         height: 700
       alignment: 0
@@ -426,18 +384,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f8f5a533f4d18c459363d9897cb4543
-      internalID: -1422488902
+      spriteID: 7edb118f755eaf2448fc258a08985ec1
+      internalID: 1305229080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_16
+      name: V3 PlayerSpawnEmerge_ spritesheet_14
       rect:
         serializedVersion: 2
         x: 2800
-        y: 1410
+        y: 1400
         width: 700
         height: 700
       alignment: 0
@@ -447,18 +405,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45de7ce0496ec6f4c8f1904e5a9d9089
-      internalID: -905234743
+      spriteID: 212d4d8bdfd5b91408addf96cae4c5e2
+      internalID: 97878275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_17
+      name: V3 PlayerSpawnEmerge_ spritesheet_15
       rect:
         serializedVersion: 2
         x: 0
-        y: 710
+        y: 700
         width: 700
         height: 700
       alignment: 0
@@ -468,18 +426,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fed9915f438246746a1c8bdd37111420
-      internalID: 95501274
+      spriteID: 9f9eb0645f2436e4abf6cfae15f5739d
+      internalID: 1566315123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_18
+      name: V3 PlayerSpawnEmerge_ spritesheet_16
       rect:
         serializedVersion: 2
         x: 700
-        y: 710
+        y: 700
         width: 700
         height: 700
       alignment: 0
@@ -489,18 +447,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed94c741fe6b00b40a84eb602222d8fc
-      internalID: -280616045
+      spriteID: a37c1ac6e6b5dec41b7cd989fe44265f
+      internalID: 813941718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_19
+      name: V3 PlayerSpawnEmerge_ spritesheet_17
       rect:
         serializedVersion: 2
         x: 1400
-        y: 710
+        y: 700
         width: 700
         height: 700
       alignment: 0
@@ -510,18 +468,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6eaff9c6800924b40a5b506522a73cee
-      internalID: -1682306220
+      spriteID: 038ec06e06672734aa71660d125ecd8b
+      internalID: 924047635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_20
+      name: V3 PlayerSpawnEmerge_ spritesheet_18
       rect:
         serializedVersion: 2
         x: 2100
-        y: 710
+        y: 700
         width: 700
         height: 700
       alignment: 0
@@ -531,18 +489,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98aa2501c75a15e49bfe7e223433d0b0
-      internalID: 1368627103
+      spriteID: b0a3799cd2365454386fc86c41a49e54
+      internalID: 1175099505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_21
+      name: V3 PlayerSpawnEmerge_ spritesheet_19
       rect:
         serializedVersion: 2
         x: 2800
-        y: 710
+        y: 700
         width: 700
         height: 700
       alignment: 0
@@ -552,18 +510,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97aa32ba038624e46bc9da383ee4407f
-      internalID: 552531992
+      spriteID: 84e769746069f0c439c564c62bae15d7
+      internalID: 957159859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_22
+      name: V3 PlayerSpawnEmerge_ spritesheet_20
       rect:
         serializedVersion: 2
         x: 0
-        y: 10
+        y: 0
         width: 700
         height: 700
       alignment: 0
@@ -573,18 +531,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6698006c073d5246a0777605e4a0b87
-      internalID: -2002539292
+      spriteID: 63e213338941a9e4e8c8b5d0ef385d04
+      internalID: 1847583774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_23
+      name: V3 PlayerSpawnEmerge_ spritesheet_21
       rect:
         serializedVersion: 2
         x: 700
-        y: 10
+        y: 0
         width: 700
         height: 700
       alignment: 0
@@ -594,18 +552,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 569fe7e29b02e204e90db68fba182e9c
-      internalID: -288400699
+      spriteID: b5908c44ccb73814bb8f56127d489cdc
+      internalID: -884287029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_24
+      name: V3 PlayerSpawnEmerge_ spritesheet_22
       rect:
         serializedVersion: 2
         x: 1400
-        y: 10
+        y: 0
         width: 700
         height: 700
       alignment: 0
@@ -615,18 +573,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6f5425d1ce5203468f1e6f710e84797
-      internalID: -304390904
+      spriteID: 988d795cdd788434b8fdd5824d0ba078
+      internalID: -1290170253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_25
+      name: V3 PlayerSpawnEmerge_ spritesheet_23
       rect:
         serializedVersion: 2
         x: 2100
-        y: 10
+        y: 0
         width: 700
         height: 700
       alignment: 0
@@ -636,29 +594,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d54a01c3949bfff4eb761426215fab7a
-      internalID: 1050597284
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: V3 PlayerRun_ spritesheet_26
-      rect:
-        serializedVersion: 2
-        x: 2800
-        y: 10
-        width: 700
-        height: 700
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 764d09064c45517419d6706296226f7c
-      internalID: 1744810899
+      spriteID: 5eab321d7f11ffc419970c4f1f333679
+      internalID: -902153358
       vertices: []
       indices: 
       edges: []
@@ -674,33 +611,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      V3 PlayerRun_ spritesheet_0: -1928569106
-      V3 PlayerRun_ spritesheet_1: -711308308
-      V3 PlayerRun_ spritesheet_10: -2104512452
-      V3 PlayerRun_ spritesheet_11: -1497174899
-      V3 PlayerRun_ spritesheet_12: 754629924
-      V3 PlayerRun_ spritesheet_13: 1546275872
-      V3 PlayerRun_ spritesheet_14: -460950673
-      V3 PlayerRun_ spritesheet_15: -1422488902
-      V3 PlayerRun_ spritesheet_16: -905234743
-      V3 PlayerRun_ spritesheet_17: 95501274
-      V3 PlayerRun_ spritesheet_18: -280616045
-      V3 PlayerRun_ spritesheet_19: -1682306220
-      V3 PlayerRun_ spritesheet_2: 1053062299
-      V3 PlayerRun_ spritesheet_20: 1368627103
-      V3 PlayerRun_ spritesheet_21: 552531992
-      V3 PlayerRun_ spritesheet_22: -2002539292
-      V3 PlayerRun_ spritesheet_23: -288400699
-      V3 PlayerRun_ spritesheet_24: -304390904
-      V3 PlayerRun_ spritesheet_25: 1050597284
-      V3 PlayerRun_ spritesheet_26: 1744810899
-      V3 PlayerRun_ spritesheet_3: 2135512948
-      V3 PlayerRun_ spritesheet_4: -2050568252
-      V3 PlayerRun_ spritesheet_5: -1689667615
-      V3 PlayerRun_ spritesheet_6: 501114654
-      V3 PlayerRun_ spritesheet_7: 257864539
-      V3 PlayerRun_ spritesheet_8: 1030181915
-      V3 PlayerRun_ spritesheet_9: 1547708871
+      V3 PlayerSpawnEmerge_ spritesheet_0: -693459827
+      V3 PlayerSpawnEmerge_ spritesheet_1: 1968636997
+      V3 PlayerSpawnEmerge_ spritesheet_10: 491444652
+      V3 PlayerSpawnEmerge_ spritesheet_11: -1596690126
+      V3 PlayerSpawnEmerge_ spritesheet_12: -1661159325
+      V3 PlayerSpawnEmerge_ spritesheet_13: 1305229080
+      V3 PlayerSpawnEmerge_ spritesheet_14: 97878275
+      V3 PlayerSpawnEmerge_ spritesheet_15: 1566315123
+      V3 PlayerSpawnEmerge_ spritesheet_16: 813941718
+      V3 PlayerSpawnEmerge_ spritesheet_17: 924047635
+      V3 PlayerSpawnEmerge_ spritesheet_18: 1175099505
+      V3 PlayerSpawnEmerge_ spritesheet_19: 957159859
+      V3 PlayerSpawnEmerge_ spritesheet_2: 403188077
+      V3 PlayerSpawnEmerge_ spritesheet_20: 1847583774
+      V3 PlayerSpawnEmerge_ spritesheet_21: -884287029
+      V3 PlayerSpawnEmerge_ spritesheet_22: -1290170253
+      V3 PlayerSpawnEmerge_ spritesheet_23: -902153358
+      V3 PlayerSpawnEmerge_ spritesheet_3: -1736621003
+      V3 PlayerSpawnEmerge_ spritesheet_4: 1832350602
+      V3 PlayerSpawnEmerge_ spritesheet_5: -393778798
+      V3 PlayerSpawnEmerge_ spritesheet_6: 1788510500
+      V3 PlayerSpawnEmerge_ spritesheet_7: -1204312914
+      V3 PlayerSpawnEmerge_ spritesheet_8: 1331726175
+      V3 PlayerSpawnEmerge_ spritesheet_9: -1970128626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
