@@ -53,6 +53,9 @@ public class playerMovement : MonoBehaviour
         control.inGameControl.TriggerRebuild.performed += ctx => rebuildBody();
 
         control.inGameControl.jumpcling.performed += ctx => southButtonPerformed();
+
+        control.inGameControl.Disable();
+
     }
 
 
@@ -61,7 +64,7 @@ public class playerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         control.inGameControl.Disable();
         currentPlayerStateIs = PlayerStates.normal;
-        StartCoroutine(emergeAnimation());
+        StartCoroutine(startAnimation());
     }
 
     void southButtonPerformed()
@@ -71,16 +74,23 @@ public class playerMovement : MonoBehaviour
             if (grounded == true && wallable == false)
             {
                 jump();
+
             }
             else if (wallable == true && currentPlayerStateIs == PlayerStates.normal)
             {
                 currentPlayerStateIs = PlayerStates.climbing;
                 body.velocity = new Vector2 (0f, body.velocity.y);
                 isClimbing = true;
+                animator.SetBool("isJumping", false);
+                animator.SetBool("isWallstick", true);
+
             }
             else if (currentPlayerStateIs == PlayerStates.climbing)
             {
                 wallJump();
+
+
+
             }
         }
 
@@ -90,10 +100,14 @@ public class playerMovement : MonoBehaviour
 
         body.velocity = new Vector2(body.velocity.x, jumpHeight);
         animator.SetBool("isJumping", true);
+        animator.SetBool("isWallstick", false);
+
     }
     private void wallJump()
     {
         body.velocity = new Vector2(controlMoveValue.x * speed, jumpHeight * 1.25f);
+        animator.SetBool("isJumping", true);
+        animator.SetBool("isWallstick", false);
 
     }
 
@@ -107,26 +121,35 @@ public class playerMovement : MonoBehaviour
                     if (isClimbing == false)
                     {
                         currentPlayerStateIs = PlayerStates.aiming;
+                        animator.SetBool("isAiming", true);
 
-                    }
-                    else if (isClimbing == true)
+
+                }
+                else if (isClimbing == true)
                     {
                         currentPlayerStateIs = PlayerStates.aimClimbing;
-                    }
+
                 }
-                else if (ctx.canceled)
+
+            }
+            else if (ctx.canceled)
                 {
                     if (isClimbing == false && currentPlayerStateIs != PlayerStates.headOut)
                     {
                         currentPlayerStateIs = PlayerStates.normal;
 
+                
                     }
                     else if (isClimbing == true && currentPlayerStateIs != PlayerStates.headOut)
                     {
                         currentPlayerStateIs = PlayerStates.climbing;
-                    }
+                        animator.SetBool("isWallstick", true);
+
                 }
-                        
+                animator.SetBool("isAiming", false);
+
+                }
+
         }
         
 
@@ -134,8 +157,12 @@ public class playerMovement : MonoBehaviour
 
     private void headThrow()
     {
+
+
         if (currentPlayerStateIs == PlayerStates.aiming || currentPlayerStateIs == PlayerStates.aimClimbing)
         {
+            animator.SetBool("isAiming", false);
+
             if (grounded == true || isClimbing == true)
             {
                 isClimbing = false;
@@ -151,10 +178,12 @@ public class playerMovement : MonoBehaviour
     {
         if (currentPlayerStateIs == PlayerStates.headOut)
         {
+            
             GameObject playerHead = GameObject.FindGameObjectWithTag("head");
             transform.position = playerHead.transform.position;
             currentPlayerStateIs = PlayerStates.normal;
             playerHead.GetComponent<headScript>().lowtiergodNOW();
+            StartCoroutine(emergeAnimation());
         }
     }
 
@@ -177,6 +206,7 @@ public class playerMovement : MonoBehaviour
         else if (currentPlayerStateIs == PlayerStates.aiming && grounded == true)
         {
             body.velocity = new Vector2(controlMoveValue.x * speed * .25f, body.velocity.y * 0.25f);
+            animator.SetBool("isJumping", false);
         }
 
         
@@ -189,16 +219,26 @@ public class playerMovement : MonoBehaviour
         if (currentPlayerStateIs == PlayerStates.climbing)
         {
             body.velocity = new Vector2(body.velocity.x, speed);
+            animator.SetBool("isWallstick", true);
+
         }
         else if (currentPlayerStateIs == PlayerStates .aimClimbing)
         {
             body.velocity = new Vector2(body.velocity.x, speed * 0.25f);
+            animator.SetBool("isAiming", true);
+            animator.SetBool("isWallstick", false);
+
+
 
         }
         else if (currentPlayerStateIs == PlayerStates.headOut)
         {
             body.velocity = new Vector2(0f, body.velocity.y);
+            animator.SetBool("isDead", true);
+
+
         }
+
 
         if (transform.position.y <= lowerLimit)
         {
@@ -216,15 +256,31 @@ public class playerMovement : MonoBehaviour
         {
             transform.localScale = new Vector3(1f, 1f, 1f);
         }
+
+        if (grounded == false && currentPlayerStateIs != PlayerStates.climbing && currentPlayerStateIs != PlayerStates.aimClimbing)
+        {
+            animator.SetBool("isAiming", false);
+
+        }
+
     }
 
     
-    IEnumerator emergeAnimation()
+    IEnumerator startAnimation()
     {
         control.inGameControl.Disable();
         animator.SetBool("isEmerging", true);
         yield return new WaitForSeconds(1f);
         animator.SetBool("isEmerging", false);
         control.inGameControl.Enable();
+    }
+
+    IEnumerator emergeAnimation()
+    {
+        animator.SetBool("isDead", false);
+        animator.SetBool("isEmerging", true);
+        yield return new WaitForSeconds(1f);
+        animator.SetBool("isEmerging", false);
+
     }
 }

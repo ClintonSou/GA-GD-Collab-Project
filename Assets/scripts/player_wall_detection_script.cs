@@ -32,6 +32,9 @@ public class player_wall_detection_script : MonoBehaviour
                 parent.GetComponent<playerMovement>().currentPlayerStateIs = playerMovement.PlayerStates.normal;
             }
             parent.GetComponent<playerMovement>().wallable = false;
+            parent.GetComponent<playerMovement>().animator.SetBool("isWallstick", false);
+            parent.GetComponent<playerMovement>().animator.SetBool("isJumping", true);
+
 
         }
     }

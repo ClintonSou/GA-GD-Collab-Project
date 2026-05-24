@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 972032589838011972}
   - component: {fileID: 604121733959990956}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gauge3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 8270958794527478968}
   - component: {fileID: 8423181281363918390}
   - component: {fileID: 9174714698103428570}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: playerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4087819895300944532}
   - component: {fileID: 4728903833614742450}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: UI_deathBar_transparent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6190872913471411313}
   - component: {fileID: 4339498993664043372}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gauge1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 2293113816664531186}
   - component: {fileID: 2183667029349561056}
   - component: {fileID: 8348204354529380777}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -529,7 +529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8208058427751699305}
   - component: {fileID: 6827955065866227147}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gauge4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -613,7 +613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8653766384025617675}
   - component: {fileID: 2040193138299167645}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gauge2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +698,7 @@ GameObject:
   - component: {fileID: 7979626658593907682}
   - component: {fileID: 7753331403843633742}
   - component: {fileID: 1378089494126326820}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: wallDetectionBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -788,7 +788,7 @@ GameObject:
   - component: {fileID: 4663649910508501239}
   - component: {fileID: 3685682801381735068}
   - component: {fileID: 6143147931452700305}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: groundDetectionBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

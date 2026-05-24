@@ -40,7 +40,6 @@ public class player_ground_detection_script : MonoBehaviour
         if (collision.tag == "Ground")
         {
             parent.GetComponent<playerMovement>().grounded = false;
-            parent.GetComponent<playerMovement>().animator.SetBool("isJumping", true);
 
 
         }

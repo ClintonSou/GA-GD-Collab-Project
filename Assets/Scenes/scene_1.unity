@@ -1790,6 +1790,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -2052015023
       objectReference: {fileID: 0}
+    - target: {fileID: 3131424724101774922, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3138088160739387300, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: m_Parameters.colorGradient.key0.b
       value: 0.07347298
@@ -1850,9 +1854,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3273298135610406440, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3478356507665528794, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3825250274684959679, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5605493686429836765, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: m_Name
       value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605493686429836765, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660505055245944608, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5971464619919794137, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7630976594555466142, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7753331403843633742, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: m_IsTrigger
@@ -1865,6 +1897,10 @@ PrefabInstance:
     - target: {fileID: 8423181281363918390, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
       propertyPath: m_FlipX
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532658894938827181, guid: acacbd78bf19225408f56f3233bdab92, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
