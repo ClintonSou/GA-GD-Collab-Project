@@ -14,9 +14,15 @@ public class playerMovement : MonoBehaviour
 
     public float jumpHeight;
     public float speed;
+    public float lowerLimit;
+
+
+    public GameObject head;
+    public GameObject playerSprite;
+
+    public Animator animator;
 
     PlayerControl control;
-    public GameObject head;
 
 
     Vector2 controlMoveValue;
@@ -53,8 +59,9 @@ public class playerMovement : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        control.inGameControl.Enable();
+        control.inGameControl.Disable();
         currentPlayerStateIs = PlayerStates.normal;
+        StartCoroutine(emergeAnimation());
     }
 
     void southButtonPerformed()
@@ -177,9 +184,6 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
         move();
-        //Debug.Log(controlMoveValue);
-        //Debug.Log(isAimingHead);
-        Debug.Log(aimHeadValue);
         if (currentPlayerStateIs == PlayerStates.climbing)
         {
             body.velocity = new Vector2(body.velocity.x, speed);
@@ -194,10 +198,20 @@ public class playerMovement : MonoBehaviour
             body.velocity = new Vector2(0f, body.velocity.y);
         }
 
-        if (transform.position.y <= -6.25f)
+        if (transform.position.y <= lowerLimit)
         {
             transform.position = lastStableGround;
         }
 
+    }
+
+
+    IEnumerator emergeAnimation()
+    {
+        control.inGameControl.Disable();
+        animator.SetBool("isEmerging", true);
+        yield return new WaitForSeconds(1f);
+        animator.SetBool("isEmerging", false);
+        control.inGameControl.Enable();
     }
 }

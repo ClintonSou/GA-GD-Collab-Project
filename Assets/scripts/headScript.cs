@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class headScript : MonoBehaviour
 {
+    Scene currentScene;
+    public string sceneName;
     GameObject player;
     public float lowerLimit;
 
@@ -12,6 +14,25 @@ public class headScript : MonoBehaviour
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+
+        currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+
+        if (sceneName == ("scene_1"))
+        {
+            lowerLimit = -6.25f;
+        }
+
+        if (sceneName == ("scene_2"))
+        {
+            lowerLimit = -6.25f;
+        }
+
+        if (sceneName == ("scene_3_new"))
+        {
+            lowerLimit = -40f;
+        }
+
     }
 
     private void Update()
