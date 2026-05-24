@@ -87,7 +87,9 @@ public class playerMovement : MonoBehaviour
     }
     private void jump()
     {
+
         body.velocity = new Vector2(body.velocity.x, jumpHeight);
+        animator.SetBool("isJumping", true);
     }
     private void wallJump()
     {
@@ -202,10 +204,21 @@ public class playerMovement : MonoBehaviour
         {
             transform.position = lastStableGround;
         }
+        animator.SetFloat("xVelocity", Mathf.Abs(body.velocity.x));
+        animator.SetFloat("yVelocity", body.velocity.y);
 
+        if (body.velocity.x < 0)
+        {
+            transform.localScale = new Vector3 (-1f , 1f, 1f);
+
+        }
+        else if (body.velocity.x > 0)
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
     }
 
-
+    
     IEnumerator emergeAnimation()
     {
         control.inGameControl.Disable();

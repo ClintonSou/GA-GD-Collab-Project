@@ -19,6 +19,8 @@ public class player_ground_detection_script : MonoBehaviour
         {
             parent.GetComponent<playerMovement>().grounded = true;
 
+
+
         }
         if ( collision.tag == "stableGround")
         {
@@ -26,11 +28,20 @@ public class player_ground_detection_script : MonoBehaviour
 
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Ground")
+        {
+            parent.GetComponent<playerMovement>().animator.SetBool("isJumping", false);
+        }
+    }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Ground")
         {
             parent.GetComponent<playerMovement>().grounded = false;
+            parent.GetComponent<playerMovement>().animator.SetBool("isJumping", true);
+
 
         }
     }

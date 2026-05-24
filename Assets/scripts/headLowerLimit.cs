@@ -35,7 +35,7 @@ public class headLowerLimit : MonoBehaviour
 
         if (sceneName == ("scene_3_new"))
         {
-            refToHead.GetComponent<headScript>().lowerLimit = -40f;
+            refToHead.GetComponent<headScript>().lowerLimit = -35f;
         }
     }
 }
