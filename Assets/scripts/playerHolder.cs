@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerHolder : MonoBehaviour
 {
@@ -39,6 +40,10 @@ public class playerHolder : MonoBehaviour
         }
         updateHealth();
 
+        if (gauge <= 0)
+        {
+            SceneManager.LoadScene("game_Over");
+        }
 
 
     }

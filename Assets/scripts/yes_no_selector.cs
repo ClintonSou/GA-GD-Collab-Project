@@ -8,9 +8,6 @@ public class yes_no_selector : MonoBehaviour
     PlayerControl control;
     public bool yesSelected;
     Vector2 controlMoveValueGameOver;
-    public SpriteRenderer yesButton;
-    public SpriteRenderer noButton;
-    public Sprite eye;
     public string currentScene;
     public Scene activeScene;
     // Start is called before the first frame update
@@ -61,19 +58,6 @@ public class yes_no_selector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
 
-        if (yesSelected)
-        {
-            yesButton.sprite = eye;
-            noButton.sprite = null;
-
-        }
-
-        if (!yesSelected)
-        {
-            yesButton.sprite = null;
-            noButton.sprite = eye;
-        }
     }
 }
