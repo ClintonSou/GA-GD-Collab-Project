@@ -80,6 +80,15 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Quit"",
+                    ""type"": ""Button"",
+                    ""id"": ""9203d0cd-a57c-4d9f-8a12-6d276d1c5099"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -148,6 +157,17 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
                     ""action"": ""TriggerHeadThrow"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4d40be82-e353-402e-a4f5-a5363e00a613"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Quit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -162,6 +182,7 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
         m_inGameControl_aimHead = m_inGameControl.FindAction("aimHead", throwIfNotFound: true);
         m_inGameControl_jumpcling = m_inGameControl.FindAction("jump/cling", throwIfNotFound: true);
         m_inGameControl_TriggerHeadThrow = m_inGameControl.FindAction("TriggerHeadThrow", throwIfNotFound: true);
+        m_inGameControl_Quit = m_inGameControl.FindAction("Quit", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -229,6 +250,7 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
     private readonly InputAction m_inGameControl_aimHead;
     private readonly InputAction m_inGameControl_jumpcling;
     private readonly InputAction m_inGameControl_TriggerHeadThrow;
+    private readonly InputAction m_inGameControl_Quit;
     public struct InGameControlActions
     {
         private @PlayerControl m_Wrapper;
@@ -239,6 +261,7 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
         public InputAction @aimHead => m_Wrapper.m_inGameControl_aimHead;
         public InputAction @jumpcling => m_Wrapper.m_inGameControl_jumpcling;
         public InputAction @TriggerHeadThrow => m_Wrapper.m_inGameControl_TriggerHeadThrow;
+        public InputAction @Quit => m_Wrapper.m_inGameControl_Quit;
         public InputActionMap Get() { return m_Wrapper.m_inGameControl; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -266,6 +289,9 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
             @TriggerHeadThrow.started += instance.OnTriggerHeadThrow;
             @TriggerHeadThrow.performed += instance.OnTriggerHeadThrow;
             @TriggerHeadThrow.canceled += instance.OnTriggerHeadThrow;
+            @Quit.started += instance.OnQuit;
+            @Quit.performed += instance.OnQuit;
+            @Quit.canceled += instance.OnQuit;
         }
 
         private void UnregisterCallbacks(IInGameControlActions instance)
@@ -288,6 +314,9 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
             @TriggerHeadThrow.started -= instance.OnTriggerHeadThrow;
             @TriggerHeadThrow.performed -= instance.OnTriggerHeadThrow;
             @TriggerHeadThrow.canceled -= instance.OnTriggerHeadThrow;
+            @Quit.started -= instance.OnQuit;
+            @Quit.performed -= instance.OnQuit;
+            @Quit.canceled -= instance.OnQuit;
         }
 
         public void RemoveCallbacks(IInGameControlActions instance)
@@ -313,5 +342,6 @@ public partial class @PlayerControl: IInputActionCollection2, IDisposable
         void OnAimHead(InputAction.CallbackContext context);
         void OnJumpcling(InputAction.CallbackContext context);
         void OnTriggerHeadThrow(InputAction.CallbackContext context);
+        void OnQuit(InputAction.CallbackContext context);
     }
 }
