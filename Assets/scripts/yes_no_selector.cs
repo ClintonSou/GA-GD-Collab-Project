@@ -44,7 +44,7 @@ public class yes_no_selector : MonoBehaviour
             if (!yesSelected)
             {
                 currentScene = "no longer game Over";
-                SceneManager.LoadScene("menu");
+                SceneManager.LoadScene("MainMenu");
             }
         }
     }

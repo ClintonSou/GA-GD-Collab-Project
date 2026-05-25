@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
 public class goalPoint : MonoBehaviour
 {
     public GameObject refToPlayer;
+
     Scene currentScene;
     string sceneName;
     public bool isTouchingGoal;
     PlayerControl goalControl;
-    // Start is called before the first frame update
     void Start()
     {
         goalControl = new PlayerControl();
@@ -52,7 +52,6 @@ public class goalPoint : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
 
