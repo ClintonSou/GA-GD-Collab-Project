@@ -26,7 +26,7 @@ public class playerHolder : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (timerOn == true)
         {
