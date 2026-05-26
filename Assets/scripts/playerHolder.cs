@@ -21,7 +21,7 @@ public class playerHolder : MonoBehaviour
     {
         timerOn = false;
         gauge = 4;
-        timer = 100;
+        timer = 50;
         updateHealth();
     }
 
@@ -33,7 +33,7 @@ public class playerHolder : MonoBehaviour
             timer += -1;
             if (timer <= 0 && gauge > 0)
             {
-                timer = 100;
+                timer = 50;
                 gauge += -1;
                
             }
@@ -50,10 +50,10 @@ public class playerHolder : MonoBehaviour
 
     void updateHealth()
     {
-        if (timerOn == false && timer == 100)
+        if (timerOn == false && timer == 50)
         {
             gauge = 4;
-            timer = 100;
+            timer = 50;
             gaugeBar.SetActive(false);
             gauge1.SetActive(false);
             gauge2.SetActive(false);
@@ -61,7 +61,7 @@ public class playerHolder : MonoBehaviour
             gauge4.SetActive(false);
         }
 
-        if (gauge == 4 && timer < 100)
+        if (gauge == 4 && timer < 50)
         {
             gaugeBar.SetActive(true);
             gauge1.SetActive(true);
@@ -69,7 +69,7 @@ public class playerHolder : MonoBehaviour
             gauge3.SetActive(true);
             gauge4.SetActive(true);
         }
-        if (gauge == 3 && timer < 100)
+        if (gauge == 3 && timer < 50)
         {
             gaugeBar.SetActive(true);
             gauge1.SetActive(false);
@@ -77,7 +77,7 @@ public class playerHolder : MonoBehaviour
             gauge3.SetActive(true);
             gauge4.SetActive(true);
         }
-        if (gauge == 2 && timer < 100)
+        if (gauge == 2 && timer < 50)
         {
             gaugeBar.SetActive(true);
             gauge1.SetActive(false);
@@ -85,7 +85,7 @@ public class playerHolder : MonoBehaviour
             gauge3.SetActive(true);
             gauge4.SetActive(true);
         }
-        if (gauge == 1 && timer < 100)
+        if (gauge == 1 && timer < 50)
         {
             gaugeBar.SetActive(true);
             gauge1.SetActive(false);
@@ -93,7 +93,7 @@ public class playerHolder : MonoBehaviour
             gauge3.SetActive(false);
             gauge4.SetActive(true);
         }
-        if (gauge == 0 && timer < 100)
+        if (gauge == 0 && timer < 50)
         {
             gaugeBar.SetActive(true);
             gauge1.SetActive(false);

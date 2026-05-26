@@ -30,7 +30,7 @@ public class lightHazard : MonoBehaviour
             Debug.Log("Exit");
             refToPlayer.GetComponent<playerHolder>().timerOn = false;
             refToPlayer.GetComponent<playerHolder>().gauge = 4;
-            refToPlayer.GetComponent<playerHolder>().timer = 100;
+            refToPlayer.GetComponent<playerHolder>().timer = 50;
 
 
         }
