@@ -553,6 +553,8 @@ MonoBehaviour:
   level3UI: {fileID: 2019893952}
   levelChecker: {fileID: 0}
   selectUI: {fileID: 1912097313}
+  enterAnimation: {fileID: 2351568843441335508, guid: cce0a991458ff4443933c9c7fdab07f2, type: 3}
+  exitAnimation: {fileID: 8159303883625943897, guid: 334e114148cc8914f89064db3056b137, type: 3}
   levelIndex: 0
 --- !u!1 &1023855884
 GameObject:

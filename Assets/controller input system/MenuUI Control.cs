@@ -112,6 +112,144 @@ public partial class @MenuUIControl: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""startSceneControl"",
+            ""id"": ""30e0cb56-17d7-4b07-86a2-88443125b8d1"",
+            ""actions"": [
+                {
+                    ""name"": ""anybutton"",
+                    ""type"": ""Button"",
+                    ""id"": ""b97c4bd7-01c2-489c-a5f1-e4de64790e39"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""39f98c0d-5f08-40c1-8cfc-76bad0fb0a97"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""anybutton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""41282ad3-406a-47b8-8fad-a52cfb4d6d50"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""anybutton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1491cbc6-ac9d-4eab-96c2-a10848daf59e"",
+                    ""path"": ""<Gamepad>/dpad/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""anybutton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""71ebd46c-b987-4ece-8665-22c2bc215b9c"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""anybutton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a5b40fa5-e1de-4279-9325-e44e35dc33c2"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""anybutton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""86e976ff-30e1-4627-a482-9920cae804d4"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""anybutton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a02af0f9-009d-42cd-9794-3b4bc7d91f0f"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""anybutton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1e36ed29-2b60-4ffb-b74f-256faceafc9a"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""anybutton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""35fc98b6-7189-44a3-b2da-00cebb7e5c36"",
+                    ""path"": ""<Gamepad>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""anybutton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6b93f875-5a3e-4c35-8d4d-550f3fa8a511"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""anybutton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c0df072e-8dc1-4569-a2c8-4970af43c41e"",
+                    ""path"": ""<DualShockGamepad>/touchpadButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""anybutton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -121,6 +259,9 @@ public partial class @MenuUIControl: IInputActionCollection2, IDisposable
         m_uicontrol_left = m_uicontrol.FindAction("left", throwIfNotFound: true);
         m_uicontrol_right = m_uicontrol.FindAction("right", throwIfNotFound: true);
         m_uicontrol_selectLevel = m_uicontrol.FindAction("selectLevel", throwIfNotFound: true);
+        // startSceneControl
+        m_startSceneControl = asset.FindActionMap("startSceneControl", throwIfNotFound: true);
+        m_startSceneControl_anybutton = m_startSceneControl.FindAction("anybutton", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -240,10 +381,60 @@ public partial class @MenuUIControl: IInputActionCollection2, IDisposable
         }
     }
     public UicontrolActions @uicontrol => new UicontrolActions(this);
+
+    // startSceneControl
+    private readonly InputActionMap m_startSceneControl;
+    private List<IStartSceneControlActions> m_StartSceneControlActionsCallbackInterfaces = new List<IStartSceneControlActions>();
+    private readonly InputAction m_startSceneControl_anybutton;
+    public struct StartSceneControlActions
+    {
+        private @MenuUIControl m_Wrapper;
+        public StartSceneControlActions(@MenuUIControl wrapper) { m_Wrapper = wrapper; }
+        public InputAction @anybutton => m_Wrapper.m_startSceneControl_anybutton;
+        public InputActionMap Get() { return m_Wrapper.m_startSceneControl; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(StartSceneControlActions set) { return set.Get(); }
+        public void AddCallbacks(IStartSceneControlActions instance)
+        {
+            if (instance == null || m_Wrapper.m_StartSceneControlActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_StartSceneControlActionsCallbackInterfaces.Add(instance);
+            @anybutton.started += instance.OnAnybutton;
+            @anybutton.performed += instance.OnAnybutton;
+            @anybutton.canceled += instance.OnAnybutton;
+        }
+
+        private void UnregisterCallbacks(IStartSceneControlActions instance)
+        {
+            @anybutton.started -= instance.OnAnybutton;
+            @anybutton.performed -= instance.OnAnybutton;
+            @anybutton.canceled -= instance.OnAnybutton;
+        }
+
+        public void RemoveCallbacks(IStartSceneControlActions instance)
+        {
+            if (m_Wrapper.m_StartSceneControlActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IStartSceneControlActions instance)
+        {
+            foreach (var item in m_Wrapper.m_StartSceneControlActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_StartSceneControlActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public StartSceneControlActions @startSceneControl => new StartSceneControlActions(this);
     public interface IUicontrolActions
     {
         void OnLeft(InputAction.CallbackContext context);
         void OnRight(InputAction.CallbackContext context);
         void OnSelectLevel(InputAction.CallbackContext context);
+    }
+    public interface IStartSceneControlActions
+    {
+        void OnAnybutton(InputAction.CallbackContext context);
     }
 }
