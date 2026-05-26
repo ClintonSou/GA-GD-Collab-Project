@@ -116,7 +116,7 @@ public class levelselectmanagerscript : MonoBehaviour
         }
         else if (levelIndex == 2)
         {
-            SceneManager.LoadScene("scene_3");
+            SceneManager.LoadScene("scene_3_new");
 
         }
     }
