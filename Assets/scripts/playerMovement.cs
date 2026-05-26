@@ -167,7 +167,7 @@ public class playerMovement : MonoBehaviour
             {
                 isClimbing = false;
                 GameObject isHead = Instantiate(head, new Vector2(transform.position.x, transform.position.y + 1f), Quaternion.identity);
-                isHead.GetComponent<Rigidbody2D>().velocity = new Vector2(aimHeadValue.x * -1f * 10f, aimHeadValue.y * -1f * 10f);
+                isHead.GetComponent<Rigidbody2D>().velocity = new Vector2(aimHeadValue.x * -1f * 8f, aimHeadValue.y * -1f * 8f);
                 currentPlayerStateIs = PlayerStates.headOut;
             }
             
