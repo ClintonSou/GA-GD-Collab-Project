@@ -15,6 +15,9 @@ public class levelselectmanagerscript : MonoBehaviour
     public GameObject levelChecker;
     public GameObject selectUI;
 
+    public GameObject enterAnimation;
+    public GameObject exitAnimation;
+
     public int levelIndex;
 
     private void Awake()
@@ -33,6 +36,8 @@ public class levelselectmanagerscript : MonoBehaviour
     void Start()
     {
         levelChecker = GameObject.FindGameObjectWithTag("levelChecker");
+
+        Instantiate(enterAnimation);
     }
 
     void Update()
@@ -104,6 +109,15 @@ public class levelselectmanagerscript : MonoBehaviour
 
     void select()
     {
+        StartCoroutine(sceneTransition());
+        menuControl.uicontrol.Disable();
+    }
+
+    IEnumerator sceneTransition()
+    {
+        Instantiate(exitAnimation);
+        yield return new WaitForSeconds(0.762f);
+
         if (levelIndex == 0)
         {
             SceneManager.LoadScene("scene_1");
@@ -119,5 +133,6 @@ public class levelselectmanagerscript : MonoBehaviour
             SceneManager.LoadScene("scene_3_new");
 
         }
+
     }
 }
