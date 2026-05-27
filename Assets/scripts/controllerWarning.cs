@@ -6,80 +6,53 @@ using UnityEngine.SceneManagement;
 public class controllerWarning : MonoBehaviour
 {
     public Color thisColor;
-    public float colourValue = 0f;
     public bool counted;
-    // Start is called before the first frame update
+
     void Start()
     {
         thisColor = gameObject.GetComponent<SpriteRenderer>().color;
         thisColor.a = 0f;
         gameObject.GetComponent<SpriteRenderer>().color = thisColor;
         counted = false;
-        //StartCoroutine(wait());
+        StartCoroutine(fadeIn());
         
     }
 
-    private void FixedUpdate()
+    IEnumerator fadeIn()
     {
-        gameObject.GetComponent<SpriteRenderer>().color = thisColor;
+        yield return new WaitForSeconds(1f);
+        float colourValue = 0f;
 
-        if (colourValue < 1f && counted == false)
+        while (colourValue < 1f)
         {
-            colourValue += 0.01f;
-            thisColor.a += colourValue;
+            colourValue += 0.05f;
+            thisColor.a = colourValue;
+
+            
+            gameObject.GetComponent<SpriteRenderer>().color = thisColor;
+            
+            yield return new WaitForFixedUpdate();
+
         }
 
-        if (colourValue >= 1f && counted == false)
+        thisColor.a = 1f;
+        colourValue = 1f;
+
+        yield return new WaitForSeconds(2f);
+
+        while (colourValue >0f )
         {
-            new WaitForSeconds(3f);
-            counted = true;
+            colourValue -= 0.05f;
+            thisColor.a = colourValue;
+
+
+            gameObject.GetComponent<SpriteRenderer>().color = thisColor;
+
+            yield return new WaitForFixedUpdate();
 
         }
 
-        if (colourValue >= 1f && counted == true)
-        {
-            colourValue -= 0.01f;
-            thisColor.a += -colourValue;
-        }
+        SceneManager.LoadScene("startGameScene");
 
-        if (colourValue <= 1f && counted == true)
-        {
-            colourValue -= 0.01f;
-            thisColor.a += -colourValue;
-        }
-
-        if (colourValue <= 0f && counted == true)
-        {
-            SceneManager.LoadScene("startGameScene");
-        }
     }
-    //cannot figure out how to reverse this oml
-    //IEnumerator wait()
-    //{
-    //    float colourValue = 0f;
-    //    yield return new WaitForSeconds(1.5f);
-
-    //    while (colourValue != 0f)
-    //    {
-    //        colourValue += 0.01f;
-    //        thisColor.a += colourValue;
-
-    //        if (colourValue <= 0f)
-    //        {
-    //            yield return new WaitForSeconds(1.5f);
-
-    //            Debug.Log(gameObject.name + "done");
-
-    //            SceneManager.LoadScene("startGameScene");
-
-    //            yield break;
-
-    //        }
-
-    //        gameObject.GetComponent<SpriteRenderer>().color = thisColor;
-
-    //        yield return new WaitForFixedUpdate();
-
-    //    }
-    //}
 }
