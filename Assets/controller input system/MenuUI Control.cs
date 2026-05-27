@@ -53,6 +53,15 @@ public partial class @MenuUIControl: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Quit"",
+                    ""type"": ""Button"",
+                    ""id"": ""2038bc90-771d-487a-a9dd-51604165f5ec"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -108,6 +117,17 @@ public partial class @MenuUIControl: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""selectLevel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7137cf7e-f243-4720-8f69-ebc571e9ef65"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Quit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -259,6 +279,7 @@ public partial class @MenuUIControl: IInputActionCollection2, IDisposable
         m_uicontrol_left = m_uicontrol.FindAction("left", throwIfNotFound: true);
         m_uicontrol_right = m_uicontrol.FindAction("right", throwIfNotFound: true);
         m_uicontrol_selectLevel = m_uicontrol.FindAction("selectLevel", throwIfNotFound: true);
+        m_uicontrol_Quit = m_uicontrol.FindAction("Quit", throwIfNotFound: true);
         // startSceneControl
         m_startSceneControl = asset.FindActionMap("startSceneControl", throwIfNotFound: true);
         m_startSceneControl_anybutton = m_startSceneControl.FindAction("anybutton", throwIfNotFound: true);
@@ -326,6 +347,7 @@ public partial class @MenuUIControl: IInputActionCollection2, IDisposable
     private readonly InputAction m_uicontrol_left;
     private readonly InputAction m_uicontrol_right;
     private readonly InputAction m_uicontrol_selectLevel;
+    private readonly InputAction m_uicontrol_Quit;
     public struct UicontrolActions
     {
         private @MenuUIControl m_Wrapper;
@@ -333,6 +355,7 @@ public partial class @MenuUIControl: IInputActionCollection2, IDisposable
         public InputAction @left => m_Wrapper.m_uicontrol_left;
         public InputAction @right => m_Wrapper.m_uicontrol_right;
         public InputAction @selectLevel => m_Wrapper.m_uicontrol_selectLevel;
+        public InputAction @Quit => m_Wrapper.m_uicontrol_Quit;
         public InputActionMap Get() { return m_Wrapper.m_uicontrol; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -351,6 +374,9 @@ public partial class @MenuUIControl: IInputActionCollection2, IDisposable
             @selectLevel.started += instance.OnSelectLevel;
             @selectLevel.performed += instance.OnSelectLevel;
             @selectLevel.canceled += instance.OnSelectLevel;
+            @Quit.started += instance.OnQuit;
+            @Quit.performed += instance.OnQuit;
+            @Quit.canceled += instance.OnQuit;
         }
 
         private void UnregisterCallbacks(IUicontrolActions instance)
@@ -364,6 +390,9 @@ public partial class @MenuUIControl: IInputActionCollection2, IDisposable
             @selectLevel.started -= instance.OnSelectLevel;
             @selectLevel.performed -= instance.OnSelectLevel;
             @selectLevel.canceled -= instance.OnSelectLevel;
+            @Quit.started -= instance.OnQuit;
+            @Quit.performed -= instance.OnQuit;
+            @Quit.canceled -= instance.OnQuit;
         }
 
         public void RemoveCallbacks(IUicontrolActions instance)
@@ -432,6 +461,7 @@ public partial class @MenuUIControl: IInputActionCollection2, IDisposable
         void OnLeft(InputAction.CallbackContext context);
         void OnRight(InputAction.CallbackContext context);
         void OnSelectLevel(InputAction.CallbackContext context);
+        void OnQuit(InputAction.CallbackContext context);
     }
     public interface IStartSceneControlActions
     {

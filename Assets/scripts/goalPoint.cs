@@ -94,7 +94,7 @@ public class goalPoint : MonoBehaviour
         }
         else if (sceneName == ("scene_3_new"))
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("Credits");
 
         }
     }

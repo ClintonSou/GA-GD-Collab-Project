@@ -27,6 +27,7 @@ public class levelselectmanagerscript : MonoBehaviour
         menuControl.uicontrol.left.performed += ctx => moveLeft();
         menuControl.uicontrol.right.performed += ctx => moveRight();
         menuControl.uicontrol.selectLevel.performed += ctx => select();
+        menuControl.uicontrol.Quit.performed += ctx => quitGame();
 
         levelIndex = 0;
 
@@ -111,6 +112,12 @@ public class levelselectmanagerscript : MonoBehaviour
     {
         StartCoroutine(sceneTransition());
         menuControl.uicontrol.Disable();
+    }
+
+    void quitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quitting Game");
     }
 
     IEnumerator sceneTransition()
