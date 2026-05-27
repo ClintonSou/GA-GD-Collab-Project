@@ -6,19 +6,29 @@ using UnityEngine.SceneManagement;
 public class yes_no_selector : MonoBehaviour
 {
     PlayerControl control;
+
     public bool yesSelected;
+
     Vector2 controlMoveValueGameOver;
+
     public string currentScene;
+
     public Scene activeScene;
-    // Start is called before the first frame update
+
+    public GameObject levelChecker;
 
     private void Awake()
     {
         control = new PlayerControl();
 
+
         control.inGameControl.jumpcling.performed += ctx => southButtonPerformed();
         control.inGameControl.Quit.performed += ctx => eastButtonPerformed();
+
         control.inGameControl.Enable();
+
+        levelChecker = GameObject.FindGameObjectWithTag("levelChecker");
+
         activeScene = SceneManager.GetActiveScene();
         currentScene = activeScene.name;
     }
@@ -32,7 +42,7 @@ public class yes_no_selector : MonoBehaviour
             {
                 {
                     currentScene = "no longer game Over";
-                    SceneManager.LoadScene("scene_1");
+                    SceneManager.LoadScene(levelChecker.GetComponent<levelcheckerscript>().lastPlayableSceneString);
                 }
             }
 

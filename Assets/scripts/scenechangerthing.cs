@@ -6,26 +6,11 @@ using UnityEngine.SceneManagement;
 public class scenechangerthing : MonoBehaviour
 {
 
-    void Start()
+    public GameObject enterAnimation;
+
+    private void Start()
     {
-        
+        Instantiate(enterAnimation);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.Alpha1))
-        {
-            SceneManager.LoadScene("Scene_1");
-        }
-        if (Input.GetKey(KeyCode.Alpha2))
-        {
-            SceneManager.LoadScene("Scene_2");
-        }
-        if (Input.GetKey(KeyCode.Alpha3))
-        {
-            SceneManager.LoadScene("Scene_3");
-        }
-
-    }
 }

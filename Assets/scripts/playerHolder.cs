@@ -42,7 +42,14 @@ public class playerHolder : MonoBehaviour
 
         if (gauge <= 0)
         {
-            SceneManager.LoadScene("game_Over");
+            gameObject.GetComponent<playerMovement>().deadAnimation();
+
+            gaugeBar.SetActive(false);
+            gauge1.SetActive(false);
+            gauge2.SetActive(false);
+            gauge3.SetActive(false);
+            gauge4.SetActive(false);
+
         }
 
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
@@ -281,6 +282,28 @@ public class playerMovement : MonoBehaviour
         animator.SetBool("isEmerging", true);
         yield return new WaitForSeconds(1f);
         animator.SetBool("isEmerging", false);
+
+    }
+
+    public void disablePlayerControl()
+    {
+        control.inGameControl.Disable();
+
+    }
+
+    public void deadAnimation()
+    {
+        animator.SetBool("isDead", true);
+        control.inGameControl.Disable();
+        StartCoroutine(gameOver());
+
+    }
+
+    IEnumerator gameOver()
+    {
+        yield return new WaitForSeconds(1f);
+
+        SceneManager.LoadScene("game_Over");
 
     }
 }
