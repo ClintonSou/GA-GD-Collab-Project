@@ -8718,7 +8718,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893972391}
-  m_Text: "Press L2 to aim your head, Pull \nthe RIGHT stick BACK in the opposite
+  m_Text: "HOLD L2 to aim your head, Pull \nthe RIGHT stick BACK in the opposite
     \ndirection you want to throw,\n and press R2 to THROW!\n\nOnce your head is
     thrown, press R1\nto REBUILD yourself!"
   m_OffsetZ: 0
