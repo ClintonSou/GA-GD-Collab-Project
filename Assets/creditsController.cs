@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 public class creditsController : MonoBehaviour
 {
     PlayerControl creditControl;
-    // Start is called before the first frame update
+    public GameObject enterAnimation;
+
+    
     void Start()
     {
         creditControl = new PlayerControl();
         creditControl.inGameControl.Quit.performed += ctx => eastButtonPerformed();
         creditControl.inGameControl.Enable();
+
+        Instantiate(enterAnimation);
     }
 
     void eastButtonPerformed()
